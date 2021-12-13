@@ -13,6 +13,7 @@ ${PROBLEM}        problem_user
 ${PERFROMANCE}    performance_glitch_user
 ${VALID PASS}     secret_sauce
 ${BACK BTN}       back-to-products
+${SORT}           class=product_sort_container
 ${ITEM4}          item_4_title_link
 ${ITEM3}          item_3_title_link
 ${PROD4}          Sauce Labs Backpack
@@ -44,3 +45,22 @@ Input User
 Input Pass
     [Arguments]    ${password}
     Input Password    password    ${password}
+
+Get Child Webelements
+    [Arguments]    ${locator}
+
+    ${element}    Get WebElement    ${locator}    
+    ${children}     Call Method       
+    ...                ${element}    
+    ...                find_elements   
+    ...                  by=xpath    value=child::*    
+    [Return]      ${children}
+
+Check Items
+    [Arguments]    ${first}    ${last}
+    ${children}    Get Child Webelements   class=inventory_list
+    ${child}    Get Child Webelements   ${children[0]}
+    Element Should Contain   ${child}    ${first}
+    ${children}    Get Child Webelements   class=inventory_list
+    ${child}    Get Child Webelements   ${children[5]}
+    Element Should Contain   ${child}    ${last}

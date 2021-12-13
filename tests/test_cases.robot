@@ -47,5 +47,15 @@ Resource          resource.robot
     Input Pass    ${VALID PASS}
     Click Button    login-button
     Product Page Open
-    
+    Select From List By Label    ${SORT}    Name (A to Z)    
+    Check Items  ${PROD4}  ${PROD3}
+    [Teardown]    Close Browser
+
+5 Sort Z-A
+    Input User    ${STANDARD}
+    Input Pass    ${VALID PASS}
+    Click Button    login-button
+    Product Page Open
+    Select From List By Label    ${SORT}    Name (Z to A)    
+    Check Items  ${PROD3}  ${PROD4}
     [Teardown]    Close Browser
