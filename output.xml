@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot generator="Robot 4.1.2 (Python 3.9.7 on win32)" generated="20211213 23:48:44.255" rpa="false" schemaversion="2">
+<robot generator="Robot 4.1.2 (Python 3.9.7 on win32)" generated="20211213 23:53:14.678" rpa="false" schemaversion="2">
 <suite id="s1" name="Tests" source="C:\Users\JAMES ANDREW PEREZ\Desktop\Code\STSWENG\RobotFramework-Exercise\tests">
 <suite id="s1-s1" name="Test Cases" source="C:\Users\JAMES ANDREW PEREZ\Desktop\Code\STSWENG\RobotFramework-Exercise\tests\test_cases.robot">
 <test id="s1-s1-t1" name="1 Valid Login">
@@ -8,29 +8,29 @@
 <arg>${URL}</arg>
 <arg>${BROWSER}</arg>
 <doc>Opens a new browser instance to the optional ``url``.</doc>
-<msg timestamp="20211213 23:48:44.453" level="INFO">Opening browser 'Chrome' to base url 'https://www.saucedemo.com/'.</msg>
-<status status="PASS" starttime="20211213 23:48:44.453" endtime="20211213 23:48:46.255"/>
+<msg timestamp="20211213 23:53:14.869" level="INFO">Opening browser 'Chrome' to base url 'https://www.saucedemo.com/'.</msg>
+<status status="PASS" starttime="20211213 23:53:14.869" endtime="20211213 23:53:16.609"/>
 </kw>
 <kw name="Maximize Browser Window" library="SeleniumLibrary">
 <doc>Maximizes current browser window.</doc>
-<status status="PASS" starttime="20211213 23:48:46.255" endtime="20211213 23:48:46.372"/>
+<status status="PASS" starttime="20211213 23:53:16.609" endtime="20211213 23:53:16.736"/>
 </kw>
 <kw name="Title Should Be" library="SeleniumLibrary">
 <arg>Swag Labs</arg>
 <doc>Verifies that the current page title equals ``title``.</doc>
-<msg timestamp="20211213 23:48:46.378" level="INFO">Page title is 'Swag Labs'.</msg>
-<status status="PASS" starttime="20211213 23:48:46.372" endtime="20211213 23:48:46.378"/>
+<msg timestamp="20211213 23:53:16.741" level="INFO">Page title is 'Swag Labs'.</msg>
+<status status="PASS" starttime="20211213 23:53:16.736" endtime="20211213 23:53:16.742"/>
 </kw>
 <kw name="Login Page Open" library="resource">
 <kw name="Page Should Contain Button" library="SeleniumLibrary">
 <arg>login-button</arg>
 <doc>Verifies button ``locator`` is found from current page.</doc>
-<msg timestamp="20211213 23:48:46.393" level="INFO">Current page contains input 'login-button'.</msg>
-<status status="PASS" starttime="20211213 23:48:46.378" endtime="20211213 23:48:46.393"/>
+<msg timestamp="20211213 23:53:16.756" level="INFO">Current page contains input 'login-button'.</msg>
+<status status="PASS" starttime="20211213 23:53:16.742" endtime="20211213 23:53:16.756"/>
 </kw>
-<status status="PASS" starttime="20211213 23:48:46.378" endtime="20211213 23:48:46.393"/>
+<status status="PASS" starttime="20211213 23:53:16.742" endtime="20211213 23:53:16.756"/>
 </kw>
-<status status="PASS" starttime="20211213 23:48:44.451" endtime="20211213 23:48:46.393"/>
+<status status="PASS" starttime="20211213 23:53:14.869" endtime="20211213 23:53:16.756"/>
 </kw>
 <kw name="Input User" library="resource">
 <arg>${STANDARD}</arg>
@@ -38,10 +38,10 @@
 <arg>user-name</arg>
 <arg>${username}</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<msg timestamp="20211213 23:48:46.395" level="INFO">Typing text 'standard_user' into text field 'user-name'.</msg>
-<status status="PASS" starttime="20211213 23:48:46.394" endtime="20211213 23:48:46.479"/>
+<msg timestamp="20211213 23:53:16.757" level="INFO">Typing text 'standard_user' into text field 'user-name'.</msg>
+<status status="PASS" starttime="20211213 23:53:16.757" endtime="20211213 23:53:16.836"/>
 </kw>
-<status status="PASS" starttime="20211213 23:48:46.394" endtime="20211213 23:48:46.479"/>
+<status status="PASS" starttime="20211213 23:53:16.757" endtime="20211213 23:53:16.836"/>
 </kw>
 <kw name="Input Pass" library="resource">
 <arg>${VALID PASS}</arg>
@@ -49,33 +49,33 @@
 <arg>password</arg>
 <arg>${password}</arg>
 <doc>Types the given password into the text field identified by ``locator``.</doc>
-<msg timestamp="20211213 23:48:46.480" level="INFO">Typing password into text field 'password'.</msg>
-<msg timestamp="20211213 23:48:46.504" level="INFO">Temporally setting log level to: NONE</msg>
-<msg timestamp="20211213 23:48:46.540" level="INFO">Log level changed from NONE to INFO.</msg>
-<status status="PASS" starttime="20211213 23:48:46.480" endtime="20211213 23:48:46.540"/>
+<msg timestamp="20211213 23:53:16.837" level="INFO">Typing password into text field 'password'.</msg>
+<msg timestamp="20211213 23:53:16.861" level="INFO">Temporally setting log level to: NONE</msg>
+<msg timestamp="20211213 23:53:16.892" level="INFO">Log level changed from NONE to INFO.</msg>
+<status status="PASS" starttime="20211213 23:53:16.837" endtime="20211213 23:53:16.892"/>
 </kw>
-<status status="PASS" starttime="20211213 23:48:46.480" endtime="20211213 23:48:46.540"/>
+<status status="PASS" starttime="20211213 23:53:16.837" endtime="20211213 23:53:16.892"/>
 </kw>
 <kw name="Click Button" library="SeleniumLibrary">
 <arg>login-button</arg>
 <doc>Clicks the button identified by ``locator``.</doc>
-<msg timestamp="20211213 23:48:46.541" level="INFO">Clicking button 'login-button'.</msg>
-<status status="PASS" starttime="20211213 23:48:46.541" endtime="20211213 23:48:46.599"/>
+<msg timestamp="20211213 23:53:16.893" level="INFO">Clicking button 'login-button'.</msg>
+<status status="PASS" starttime="20211213 23:53:16.893" endtime="20211213 23:53:16.948"/>
 </kw>
 <kw name="Product Page Open" library="resource">
 <kw name="Page Should Contain" library="SeleniumLibrary">
 <arg>Products</arg>
 <doc>Verifies that current page contains ``text``.</doc>
-<msg timestamp="20211213 23:48:46.610" level="INFO">Current page contains text 'Products'.</msg>
-<status status="PASS" starttime="20211213 23:48:46.600" endtime="20211213 23:48:46.610"/>
+<msg timestamp="20211213 23:53:16.959" level="INFO">Current page contains text 'Products'.</msg>
+<status status="PASS" starttime="20211213 23:53:16.949" endtime="20211213 23:53:16.959"/>
 </kw>
-<status status="PASS" starttime="20211213 23:48:46.599" endtime="20211213 23:48:46.611"/>
+<status status="PASS" starttime="20211213 23:53:16.949" endtime="20211213 23:53:16.959"/>
 </kw>
 <kw name="Close Browser" library="SeleniumLibrary" type="TEARDOWN">
 <doc>Closes the current browser.</doc>
-<status status="PASS" starttime="20211213 23:48:46.611" endtime="20211213 23:48:48.732"/>
+<status status="PASS" starttime="20211213 23:53:16.960" endtime="20211213 23:53:19.094"/>
 </kw>
-<status status="PASS" starttime="20211213 23:48:44.451" endtime="20211213 23:48:48.732"/>
+<status status="PASS" starttime="20211213 23:53:14.868" endtime="20211213 23:53:19.095"/>
 </test>
 <test id="s1-s1-t2" name="2 Locked Out">
 <kw name="Setup Browser" library="resource" type="SETUP">
@@ -83,29 +83,29 @@
 <arg>${URL}</arg>
 <arg>${BROWSER}</arg>
 <doc>Opens a new browser instance to the optional ``url``.</doc>
-<msg timestamp="20211213 23:48:48.739" level="INFO">Opening browser 'Chrome' to base url 'https://www.saucedemo.com/'.</msg>
-<status status="PASS" starttime="20211213 23:48:48.738" endtime="20211213 23:48:50.462"/>
+<msg timestamp="20211213 23:53:19.100" level="INFO">Opening browser 'Chrome' to base url 'https://www.saucedemo.com/'.</msg>
+<status status="PASS" starttime="20211213 23:53:19.099" endtime="20211213 23:53:20.624"/>
 </kw>
 <kw name="Maximize Browser Window" library="SeleniumLibrary">
 <doc>Maximizes current browser window.</doc>
-<status status="PASS" starttime="20211213 23:48:50.462" endtime="20211213 23:48:50.583"/>
+<status status="PASS" starttime="20211213 23:53:20.624" endtime="20211213 23:53:20.745"/>
 </kw>
 <kw name="Title Should Be" library="SeleniumLibrary">
 <arg>Swag Labs</arg>
 <doc>Verifies that the current page title equals ``title``.</doc>
-<msg timestamp="20211213 23:48:50.588" level="INFO">Page title is 'Swag Labs'.</msg>
-<status status="PASS" starttime="20211213 23:48:50.583" endtime="20211213 23:48:50.588"/>
+<msg timestamp="20211213 23:53:20.748" level="INFO">Page title is 'Swag Labs'.</msg>
+<status status="PASS" starttime="20211213 23:53:20.745" endtime="20211213 23:53:20.748"/>
 </kw>
 <kw name="Login Page Open" library="resource">
 <kw name="Page Should Contain Button" library="SeleniumLibrary">
 <arg>login-button</arg>
 <doc>Verifies button ``locator`` is found from current page.</doc>
-<msg timestamp="20211213 23:48:50.602" level="INFO">Current page contains input 'login-button'.</msg>
-<status status="PASS" starttime="20211213 23:48:50.588" endtime="20211213 23:48:50.602"/>
+<msg timestamp="20211213 23:53:20.758" level="INFO">Current page contains input 'login-button'.</msg>
+<status status="PASS" starttime="20211213 23:53:20.748" endtime="20211213 23:53:20.758"/>
 </kw>
-<status status="PASS" starttime="20211213 23:48:50.588" endtime="20211213 23:48:50.602"/>
+<status status="PASS" starttime="20211213 23:53:20.748" endtime="20211213 23:53:20.758"/>
 </kw>
-<status status="PASS" starttime="20211213 23:48:48.737" endtime="20211213 23:48:50.602"/>
+<status status="PASS" starttime="20211213 23:53:19.099" endtime="20211213 23:53:20.758"/>
 </kw>
 <kw name="Input User" library="resource">
 <arg>${LOCKED}</arg>
@@ -113,10 +113,10 @@
 <arg>user-name</arg>
 <arg>${username}</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<msg timestamp="20211213 23:48:50.603" level="INFO">Typing text 'locked_out_user' into text field 'user-name'.</msg>
-<status status="PASS" starttime="20211213 23:48:50.603" endtime="20211213 23:48:50.682"/>
+<msg timestamp="20211213 23:53:20.759" level="INFO">Typing text 'locked_out_user' into text field 'user-name'.</msg>
+<status status="PASS" starttime="20211213 23:53:20.759" endtime="20211213 23:53:20.829"/>
 </kw>
-<status status="PASS" starttime="20211213 23:48:50.603" endtime="20211213 23:48:50.683"/>
+<status status="PASS" starttime="20211213 23:53:20.759" endtime="20211213 23:53:20.829"/>
 </kw>
 <kw name="Input Pass" library="resource">
 <arg>${VALID PASS}</arg>
@@ -124,42 +124,42 @@
 <arg>password</arg>
 <arg>${password}</arg>
 <doc>Types the given password into the text field identified by ``locator``.</doc>
-<msg timestamp="20211213 23:48:50.683" level="INFO">Typing password into text field 'password'.</msg>
-<msg timestamp="20211213 23:48:50.709" level="INFO">Temporally setting log level to: NONE</msg>
-<msg timestamp="20211213 23:48:50.741" level="INFO">Log level changed from NONE to INFO.</msg>
-<status status="PASS" starttime="20211213 23:48:50.683" endtime="20211213 23:48:50.741"/>
+<msg timestamp="20211213 23:53:20.830" level="INFO">Typing password into text field 'password'.</msg>
+<msg timestamp="20211213 23:53:20.853" level="INFO">Temporally setting log level to: NONE</msg>
+<msg timestamp="20211213 23:53:20.879" level="INFO">Log level changed from NONE to INFO.</msg>
+<status status="PASS" starttime="20211213 23:53:20.830" endtime="20211213 23:53:20.879"/>
 </kw>
-<status status="PASS" starttime="20211213 23:48:50.683" endtime="20211213 23:48:50.741"/>
+<status status="PASS" starttime="20211213 23:53:20.830" endtime="20211213 23:53:20.879"/>
 </kw>
 <kw name="Click Button" library="SeleniumLibrary">
 <arg>login-button</arg>
 <doc>Clicks the button identified by ``locator``.</doc>
-<msg timestamp="20211213 23:48:50.743" level="INFO">Clicking button 'login-button'.</msg>
-<status status="PASS" starttime="20211213 23:48:50.741" endtime="20211213 23:48:50.773"/>
+<msg timestamp="20211213 23:53:20.879" level="INFO">Clicking button 'login-button'.</msg>
+<status status="PASS" starttime="20211213 23:53:20.879" endtime="20211213 23:53:20.914"/>
 </kw>
 <kw name="Login Page Open" library="resource">
 <kw name="Page Should Contain Button" library="SeleniumLibrary">
 <arg>login-button</arg>
 <doc>Verifies button ``locator`` is found from current page.</doc>
-<msg timestamp="20211213 23:48:50.779" level="INFO">Current page contains input 'login-button'.</msg>
-<status status="PASS" starttime="20211213 23:48:50.773" endtime="20211213 23:48:50.779"/>
+<msg timestamp="20211213 23:53:20.921" level="INFO">Current page contains input 'login-button'.</msg>
+<status status="PASS" starttime="20211213 23:53:20.914" endtime="20211213 23:53:20.921"/>
 </kw>
-<status status="PASS" starttime="20211213 23:48:50.773" endtime="20211213 23:48:50.779"/>
+<status status="PASS" starttime="20211213 23:53:20.914" endtime="20211213 23:53:20.921"/>
 </kw>
 <kw name="Error Locked" library="resource">
 <kw name="Page Should Contain" library="SeleniumLibrary">
 <arg>Epic sadface: Sorry, this user has been locked out.</arg>
 <doc>Verifies that current page contains ``text``.</doc>
-<msg timestamp="20211213 23:48:50.786" level="INFO">Current page contains text 'Epic sadface: Sorry, this user has been locked out.'.</msg>
-<status status="PASS" starttime="20211213 23:48:50.779" endtime="20211213 23:48:50.786"/>
+<msg timestamp="20211213 23:53:20.928" level="INFO">Current page contains text 'Epic sadface: Sorry, this user has been locked out.'.</msg>
+<status status="PASS" starttime="20211213 23:53:20.922" endtime="20211213 23:53:20.928"/>
 </kw>
-<status status="PASS" starttime="20211213 23:48:50.779" endtime="20211213 23:48:50.786"/>
+<status status="PASS" starttime="20211213 23:53:20.921" endtime="20211213 23:53:20.928"/>
 </kw>
 <kw name="Close Browser" library="SeleniumLibrary" type="TEARDOWN">
 <doc>Closes the current browser.</doc>
-<status status="PASS" starttime="20211213 23:48:50.786" endtime="20211213 23:48:52.920"/>
+<status status="PASS" starttime="20211213 23:53:20.929" endtime="20211213 23:53:23.028"/>
 </kw>
-<status status="PASS" starttime="20211213 23:48:48.736" endtime="20211213 23:48:52.921"/>
+<status status="PASS" starttime="20211213 23:53:19.098" endtime="20211213 23:53:23.028"/>
 </test>
 <test id="s1-s1-t3" name="3 Wrong Password">
 <kw name="Setup Browser" library="resource" type="SETUP">
@@ -167,29 +167,29 @@
 <arg>${URL}</arg>
 <arg>${BROWSER}</arg>
 <doc>Opens a new browser instance to the optional ``url``.</doc>
-<msg timestamp="20211213 23:48:52.926" level="INFO">Opening browser 'Chrome' to base url 'https://www.saucedemo.com/'.</msg>
-<status status="PASS" starttime="20211213 23:48:52.926" endtime="20211213 23:48:55.192"/>
+<msg timestamp="20211213 23:53:23.030" level="INFO">Opening browser 'Chrome' to base url 'https://www.saucedemo.com/'.</msg>
+<status status="PASS" starttime="20211213 23:53:23.030" endtime="20211213 23:53:24.716"/>
 </kw>
 <kw name="Maximize Browser Window" library="SeleniumLibrary">
 <doc>Maximizes current browser window.</doc>
-<status status="PASS" starttime="20211213 23:48:55.192" endtime="20211213 23:48:55.318"/>
+<status status="PASS" starttime="20211213 23:53:24.716" endtime="20211213 23:53:24.839"/>
 </kw>
 <kw name="Title Should Be" library="SeleniumLibrary">
 <arg>Swag Labs</arg>
 <doc>Verifies that the current page title equals ``title``.</doc>
-<msg timestamp="20211213 23:48:55.323" level="INFO">Page title is 'Swag Labs'.</msg>
-<status status="PASS" starttime="20211213 23:48:55.318" endtime="20211213 23:48:55.323"/>
+<msg timestamp="20211213 23:53:24.845" level="INFO">Page title is 'Swag Labs'.</msg>
+<status status="PASS" starttime="20211213 23:53:24.840" endtime="20211213 23:53:24.845"/>
 </kw>
 <kw name="Login Page Open" library="resource">
 <kw name="Page Should Contain Button" library="SeleniumLibrary">
 <arg>login-button</arg>
 <doc>Verifies button ``locator`` is found from current page.</doc>
-<msg timestamp="20211213 23:48:55.338" level="INFO">Current page contains input 'login-button'.</msg>
-<status status="PASS" starttime="20211213 23:48:55.324" endtime="20211213 23:48:55.338"/>
+<msg timestamp="20211213 23:53:24.860" level="INFO">Current page contains input 'login-button'.</msg>
+<status status="PASS" starttime="20211213 23:53:24.846" endtime="20211213 23:53:24.861"/>
 </kw>
-<status status="PASS" starttime="20211213 23:48:55.324" endtime="20211213 23:48:55.338"/>
+<status status="PASS" starttime="20211213 23:53:24.845" endtime="20211213 23:53:24.861"/>
 </kw>
-<status status="PASS" starttime="20211213 23:48:52.925" endtime="20211213 23:48:55.338"/>
+<status status="PASS" starttime="20211213 23:53:23.030" endtime="20211213 23:53:24.861"/>
 </kw>
 <kw name="Input User" library="resource">
 <arg>${STANDARD}</arg>
@@ -197,10 +197,10 @@
 <arg>user-name</arg>
 <arg>${username}</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<msg timestamp="20211213 23:48:55.339" level="INFO">Typing text 'standard_user' into text field 'user-name'.</msg>
-<status status="PASS" starttime="20211213 23:48:55.339" endtime="20211213 23:48:55.419"/>
+<msg timestamp="20211213 23:53:24.862" level="INFO">Typing text 'standard_user' into text field 'user-name'.</msg>
+<status status="PASS" starttime="20211213 23:53:24.861" endtime="20211213 23:53:24.941"/>
 </kw>
-<status status="PASS" starttime="20211213 23:48:55.339" endtime="20211213 23:48:55.420"/>
+<status status="PASS" starttime="20211213 23:53:24.861" endtime="20211213 23:53:24.942"/>
 </kw>
 <kw name="Input Pass" library="resource">
 <arg>wrongpass</arg>
@@ -208,42 +208,42 @@
 <arg>password</arg>
 <arg>${password}</arg>
 <doc>Types the given password into the text field identified by ``locator``.</doc>
-<msg timestamp="20211213 23:48:55.420" level="INFO">Typing password into text field 'password'.</msg>
-<msg timestamp="20211213 23:48:55.447" level="INFO">Temporally setting log level to: NONE</msg>
-<msg timestamp="20211213 23:48:55.481" level="INFO">Log level changed from NONE to INFO.</msg>
-<status status="PASS" starttime="20211213 23:48:55.420" endtime="20211213 23:48:55.481"/>
+<msg timestamp="20211213 23:53:24.943" level="INFO">Typing password into text field 'password'.</msg>
+<msg timestamp="20211213 23:53:24.969" level="INFO">Temporally setting log level to: NONE</msg>
+<msg timestamp="20211213 23:53:25.004" level="INFO">Log level changed from NONE to INFO.</msg>
+<status status="PASS" starttime="20211213 23:53:24.943" endtime="20211213 23:53:25.004"/>
 </kw>
-<status status="PASS" starttime="20211213 23:48:55.420" endtime="20211213 23:48:55.481"/>
+<status status="PASS" starttime="20211213 23:53:24.942" endtime="20211213 23:53:25.004"/>
 </kw>
 <kw name="Click Button" library="SeleniumLibrary">
 <arg>login-button</arg>
 <doc>Clicks the button identified by ``locator``.</doc>
-<msg timestamp="20211213 23:48:55.482" level="INFO">Clicking button 'login-button'.</msg>
-<status status="PASS" starttime="20211213 23:48:55.482" endtime="20211213 23:48:55.515"/>
+<msg timestamp="20211213 23:53:25.005" level="INFO">Clicking button 'login-button'.</msg>
+<status status="PASS" starttime="20211213 23:53:25.004" endtime="20211213 23:53:25.038"/>
 </kw>
 <kw name="Login Page Open" library="resource">
 <kw name="Page Should Contain Button" library="SeleniumLibrary">
 <arg>login-button</arg>
 <doc>Verifies button ``locator`` is found from current page.</doc>
-<msg timestamp="20211213 23:48:55.527" level="INFO">Current page contains input 'login-button'.</msg>
-<status status="PASS" starttime="20211213 23:48:55.516" endtime="20211213 23:48:55.527"/>
+<msg timestamp="20211213 23:53:25.046" level="INFO">Current page contains input 'login-button'.</msg>
+<status status="PASS" starttime="20211213 23:53:25.038" endtime="20211213 23:53:25.046"/>
 </kw>
-<status status="PASS" starttime="20211213 23:48:55.516" endtime="20211213 23:48:55.527"/>
+<status status="PASS" starttime="20211213 23:53:25.038" endtime="20211213 23:53:25.046"/>
 </kw>
 <kw name="Error Wrong" library="resource">
 <kw name="Page Should Contain" library="SeleniumLibrary">
 <arg>Epic sadface: Username and password do not match any user in this service</arg>
 <doc>Verifies that current page contains ``text``.</doc>
-<msg timestamp="20211213 23:48:55.535" level="INFO">Current page contains text 'Epic sadface: Username and password do not match any user in this service'.</msg>
-<status status="PASS" starttime="20211213 23:48:55.527" endtime="20211213 23:48:55.535"/>
+<msg timestamp="20211213 23:53:25.053" level="INFO">Current page contains text 'Epic sadface: Username and password do not match any user in this service'.</msg>
+<status status="PASS" starttime="20211213 23:53:25.046" endtime="20211213 23:53:25.054"/>
 </kw>
-<status status="PASS" starttime="20211213 23:48:55.527" endtime="20211213 23:48:55.535"/>
+<status status="PASS" starttime="20211213 23:53:25.046" endtime="20211213 23:53:25.054"/>
 </kw>
 <kw name="Close Browser" library="SeleniumLibrary" type="TEARDOWN">
 <doc>Closes the current browser.</doc>
-<status status="PASS" starttime="20211213 23:48:55.535" endtime="20211213 23:48:57.663"/>
+<status status="PASS" starttime="20211213 23:53:25.054" endtime="20211213 23:53:27.191"/>
 </kw>
-<status status="PASS" starttime="20211213 23:48:52.924" endtime="20211213 23:48:57.664"/>
+<status status="PASS" starttime="20211213 23:53:23.029" endtime="20211213 23:53:27.193"/>
 </test>
 <test id="s1-s1-t4" name="4 Problem User">
 <kw name="Setup Browser" library="resource" type="SETUP">
@@ -251,29 +251,29 @@
 <arg>${URL}</arg>
 <arg>${BROWSER}</arg>
 <doc>Opens a new browser instance to the optional ``url``.</doc>
-<msg timestamp="20211213 23:48:57.670" level="INFO">Opening browser 'Chrome' to base url 'https://www.saucedemo.com/'.</msg>
-<status status="PASS" starttime="20211213 23:48:57.669" endtime="20211213 23:48:59.169"/>
+<msg timestamp="20211213 23:53:27.198" level="INFO">Opening browser 'Chrome' to base url 'https://www.saucedemo.com/'.</msg>
+<status status="PASS" starttime="20211213 23:53:27.197" endtime="20211213 23:53:28.711"/>
 </kw>
 <kw name="Maximize Browser Window" library="SeleniumLibrary">
 <doc>Maximizes current browser window.</doc>
-<status status="PASS" starttime="20211213 23:48:59.169" endtime="20211213 23:48:59.293"/>
+<status status="PASS" starttime="20211213 23:53:28.711" endtime="20211213 23:53:28.824"/>
 </kw>
 <kw name="Title Should Be" library="SeleniumLibrary">
 <arg>Swag Labs</arg>
 <doc>Verifies that the current page title equals ``title``.</doc>
-<msg timestamp="20211213 23:48:59.299" level="INFO">Page title is 'Swag Labs'.</msg>
-<status status="PASS" starttime="20211213 23:48:59.293" endtime="20211213 23:48:59.300"/>
+<msg timestamp="20211213 23:53:28.830" level="INFO">Page title is 'Swag Labs'.</msg>
+<status status="PASS" starttime="20211213 23:53:28.824" endtime="20211213 23:53:28.830"/>
 </kw>
 <kw name="Login Page Open" library="resource">
 <kw name="Page Should Contain Button" library="SeleniumLibrary">
 <arg>login-button</arg>
 <doc>Verifies button ``locator`` is found from current page.</doc>
-<msg timestamp="20211213 23:48:59.312" level="INFO">Current page contains input 'login-button'.</msg>
-<status status="PASS" starttime="20211213 23:48:59.300" endtime="20211213 23:48:59.312"/>
+<msg timestamp="20211213 23:53:28.847" level="INFO">Current page contains input 'login-button'.</msg>
+<status status="PASS" starttime="20211213 23:53:28.830" endtime="20211213 23:53:28.847"/>
 </kw>
-<status status="PASS" starttime="20211213 23:48:59.300" endtime="20211213 23:48:59.312"/>
+<status status="PASS" starttime="20211213 23:53:28.830" endtime="20211213 23:53:28.847"/>
 </kw>
-<status status="PASS" starttime="20211213 23:48:57.669" endtime="20211213 23:48:59.312"/>
+<status status="PASS" starttime="20211213 23:53:27.197" endtime="20211213 23:53:28.847"/>
 </kw>
 <kw name="Input User" library="resource">
 <arg>${PROBLEM}</arg>
@@ -281,10 +281,10 @@
 <arg>user-name</arg>
 <arg>${username}</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<msg timestamp="20211213 23:48:59.314" level="INFO">Typing text 'problem_user' into text field 'user-name'.</msg>
-<status status="PASS" starttime="20211213 23:48:59.313" endtime="20211213 23:48:59.388"/>
+<msg timestamp="20211213 23:53:28.848" level="INFO">Typing text 'problem_user' into text field 'user-name'.</msg>
+<status status="PASS" starttime="20211213 23:53:28.848" endtime="20211213 23:53:28.928"/>
 </kw>
-<status status="PASS" starttime="20211213 23:48:59.313" endtime="20211213 23:48:59.388"/>
+<status status="PASS" starttime="20211213 23:53:28.848" endtime="20211213 23:53:28.929"/>
 </kw>
 <kw name="Input Pass" library="resource">
 <arg>${VALID PASS}</arg>
@@ -292,69 +292,69 @@
 <arg>password</arg>
 <arg>${password}</arg>
 <doc>Types the given password into the text field identified by ``locator``.</doc>
-<msg timestamp="20211213 23:48:59.390" level="INFO">Typing password into text field 'password'.</msg>
-<msg timestamp="20211213 23:48:59.416" level="INFO">Temporally setting log level to: NONE</msg>
-<msg timestamp="20211213 23:48:59.444" level="INFO">Log level changed from NONE to INFO.</msg>
-<status status="PASS" starttime="20211213 23:48:59.389" endtime="20211213 23:48:59.444"/>
+<msg timestamp="20211213 23:53:28.929" level="INFO">Typing password into text field 'password'.</msg>
+<msg timestamp="20211213 23:53:28.955" level="INFO">Temporally setting log level to: NONE</msg>
+<msg timestamp="20211213 23:53:28.984" level="INFO">Log level changed from NONE to INFO.</msg>
+<status status="PASS" starttime="20211213 23:53:28.929" endtime="20211213 23:53:28.984"/>
 </kw>
-<status status="PASS" starttime="20211213 23:48:59.389" endtime="20211213 23:48:59.444"/>
+<status status="PASS" starttime="20211213 23:53:28.929" endtime="20211213 23:53:28.984"/>
 </kw>
 <kw name="Click Button" library="SeleniumLibrary">
 <arg>login-button</arg>
 <doc>Clicks the button identified by ``locator``.</doc>
-<msg timestamp="20211213 23:48:59.445" level="INFO">Clicking button 'login-button'.</msg>
-<status status="PASS" starttime="20211213 23:48:59.445" endtime="20211213 23:48:59.499"/>
+<msg timestamp="20211213 23:53:28.984" level="INFO">Clicking button 'login-button'.</msg>
+<status status="PASS" starttime="20211213 23:53:28.984" endtime="20211213 23:53:29.043"/>
 </kw>
 <kw name="Product Page Open" library="resource">
 <kw name="Page Should Contain" library="SeleniumLibrary">
 <arg>Products</arg>
 <doc>Verifies that current page contains ``text``.</doc>
-<msg timestamp="20211213 23:48:59.509" level="INFO">Current page contains text 'Products'.</msg>
-<status status="PASS" starttime="20211213 23:48:59.500" endtime="20211213 23:48:59.509"/>
+<msg timestamp="20211213 23:53:29.058" level="INFO">Current page contains text 'Products'.</msg>
+<status status="PASS" starttime="20211213 23:53:29.044" endtime="20211213 23:53:29.058"/>
 </kw>
-<status status="PASS" starttime="20211213 23:48:59.499" endtime="20211213 23:48:59.509"/>
+<status status="PASS" starttime="20211213 23:53:29.044" endtime="20211213 23:53:29.058"/>
 </kw>
 <kw name="Click Element" library="SeleniumLibrary">
 <arg>${ITEM4}</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<msg timestamp="20211213 23:48:59.510" level="INFO">Clicking element 'item_4_title_link'.</msg>
-<status status="PASS" starttime="20211213 23:48:59.509" endtime="20211213 23:48:59.548"/>
+<msg timestamp="20211213 23:53:29.059" level="INFO">Clicking element 'item_4_title_link'.</msg>
+<status status="PASS" starttime="20211213 23:53:29.059" endtime="20211213 23:53:29.109"/>
 </kw>
 <kw name="Page Should Not Contain" library="SeleniumLibrary">
 <arg>${PROD4}</arg>
 <doc>Verifies the current page does not contain ``text``.</doc>
-<msg timestamp="20211213 23:48:59.566" level="INFO">Current page does not contain text 'Sauce Labs Backpack'.</msg>
-<status status="PASS" starttime="20211213 23:48:59.548" endtime="20211213 23:48:59.566"/>
+<msg timestamp="20211213 23:53:29.131" level="INFO">Current page does not contain text 'Sauce Labs Backpack'.</msg>
+<status status="PASS" starttime="20211213 23:53:29.109" endtime="20211213 23:53:29.131"/>
 </kw>
 <kw name="Click Button" library="SeleniumLibrary">
 <arg>${BACK BTN}</arg>
 <doc>Clicks the button identified by ``locator``.</doc>
-<msg timestamp="20211213 23:48:59.567" level="INFO">Clicking button 'back-to-products'.</msg>
-<status status="PASS" starttime="20211213 23:48:59.566" endtime="20211213 23:48:59.609"/>
+<msg timestamp="20211213 23:53:29.131" level="INFO">Clicking button 'back-to-products'.</msg>
+<status status="PASS" starttime="20211213 23:53:29.131" endtime="20211213 23:53:29.177"/>
 </kw>
 <kw name="Click Element" library="SeleniumLibrary">
 <arg>${ITEM3}</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<msg timestamp="20211213 23:48:59.610" level="INFO">Clicking element 'item_3_title_link'.</msg>
-<status status="PASS" starttime="20211213 23:48:59.609" endtime="20211213 23:48:59.670"/>
+<msg timestamp="20211213 23:53:29.178" level="INFO">Clicking element 'item_3_title_link'.</msg>
+<status status="PASS" starttime="20211213 23:53:29.177" endtime="20211213 23:53:29.212"/>
 </kw>
 <kw name="Page Should Not Contain" library="SeleniumLibrary">
 <arg>${PROD3}</arg>
 <doc>Verifies the current page does not contain ``text``.</doc>
-<msg timestamp="20211213 23:48:59.687" level="INFO">Current page does not contain text 'Test.allTheThings() T-Shirt (Red)'.</msg>
-<status status="PASS" starttime="20211213 23:48:59.671" endtime="20211213 23:48:59.687"/>
+<msg timestamp="20211213 23:53:29.226" level="INFO">Current page does not contain text 'Test.allTheThings() T-Shirt (Red)'.</msg>
+<status status="PASS" starttime="20211213 23:53:29.213" endtime="20211213 23:53:29.226"/>
 </kw>
 <kw name="Click Button" library="SeleniumLibrary">
 <arg>${BACK BTN}</arg>
 <doc>Clicks the button identified by ``locator``.</doc>
-<msg timestamp="20211213 23:48:59.688" level="INFO">Clicking button 'back-to-products'.</msg>
-<status status="PASS" starttime="20211213 23:48:59.688" endtime="20211213 23:48:59.731"/>
+<msg timestamp="20211213 23:53:29.227" level="INFO">Clicking button 'back-to-products'.</msg>
+<status status="PASS" starttime="20211213 23:53:29.226" endtime="20211213 23:53:29.264"/>
 </kw>
 <kw name="Close Browser" library="SeleniumLibrary" type="TEARDOWN">
 <doc>Closes the current browser.</doc>
-<status status="PASS" starttime="20211213 23:48:59.732" endtime="20211213 23:49:01.847"/>
+<status status="PASS" starttime="20211213 23:53:29.265" endtime="20211213 23:53:31.400"/>
 </kw>
-<status status="PASS" starttime="20211213 23:48:57.668" endtime="20211213 23:49:01.848"/>
+<status status="PASS" starttime="20211213 23:53:27.196" endtime="20211213 23:53:31.401"/>
 </test>
 <test id="s1-s1-t5" name="5 Sort A-Z">
 <kw name="Setup Browser" library="resource" type="SETUP">
@@ -362,29 +362,29 @@
 <arg>${URL}</arg>
 <arg>${BROWSER}</arg>
 <doc>Opens a new browser instance to the optional ``url``.</doc>
-<msg timestamp="20211213 23:49:01.854" level="INFO">Opening browser 'Chrome' to base url 'https://www.saucedemo.com/'.</msg>
-<status status="PASS" starttime="20211213 23:49:01.853" endtime="20211213 23:49:03.306"/>
+<msg timestamp="20211213 23:53:31.405" level="INFO">Opening browser 'Chrome' to base url 'https://www.saucedemo.com/'.</msg>
+<status status="PASS" starttime="20211213 23:53:31.405" endtime="20211213 23:53:32.977"/>
 </kw>
 <kw name="Maximize Browser Window" library="SeleniumLibrary">
 <doc>Maximizes current browser window.</doc>
-<status status="PASS" starttime="20211213 23:49:03.306" endtime="20211213 23:49:03.423"/>
+<status status="PASS" starttime="20211213 23:53:32.977" endtime="20211213 23:53:33.100"/>
 </kw>
 <kw name="Title Should Be" library="SeleniumLibrary">
 <arg>Swag Labs</arg>
 <doc>Verifies that the current page title equals ``title``.</doc>
-<msg timestamp="20211213 23:49:03.429" level="INFO">Page title is 'Swag Labs'.</msg>
-<status status="PASS" starttime="20211213 23:49:03.423" endtime="20211213 23:49:03.430"/>
+<msg timestamp="20211213 23:53:33.103" level="INFO">Page title is 'Swag Labs'.</msg>
+<status status="PASS" starttime="20211213 23:53:33.100" endtime="20211213 23:53:33.103"/>
 </kw>
 <kw name="Login Page Open" library="resource">
 <kw name="Page Should Contain Button" library="SeleniumLibrary">
 <arg>login-button</arg>
 <doc>Verifies button ``locator`` is found from current page.</doc>
-<msg timestamp="20211213 23:49:03.443" level="INFO">Current page contains input 'login-button'.</msg>
-<status status="PASS" starttime="20211213 23:49:03.430" endtime="20211213 23:49:03.443"/>
+<msg timestamp="20211213 23:53:33.112" level="INFO">Current page contains input 'login-button'.</msg>
+<status status="PASS" starttime="20211213 23:53:33.103" endtime="20211213 23:53:33.112"/>
 </kw>
-<status status="PASS" starttime="20211213 23:49:03.430" endtime="20211213 23:49:03.443"/>
+<status status="PASS" starttime="20211213 23:53:33.103" endtime="20211213 23:53:33.113"/>
 </kw>
-<status status="PASS" starttime="20211213 23:49:01.853" endtime="20211213 23:49:03.443"/>
+<status status="PASS" starttime="20211213 23:53:31.405" endtime="20211213 23:53:33.113"/>
 </kw>
 <kw name="Input User" library="resource">
 <arg>${STANDARD}</arg>
@@ -392,10 +392,10 @@
 <arg>user-name</arg>
 <arg>${username}</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<msg timestamp="20211213 23:49:03.444" level="INFO">Typing text 'standard_user' into text field 'user-name'.</msg>
-<status status="PASS" starttime="20211213 23:49:03.444" endtime="20211213 23:49:03.522"/>
+<msg timestamp="20211213 23:53:33.113" level="INFO">Typing text 'standard_user' into text field 'user-name'.</msg>
+<status status="PASS" starttime="20211213 23:53:33.113" endtime="20211213 23:53:33.174"/>
 </kw>
-<status status="PASS" starttime="20211213 23:49:03.444" endtime="20211213 23:49:03.522"/>
+<status status="PASS" starttime="20211213 23:53:33.113" endtime="20211213 23:53:33.174"/>
 </kw>
 <kw name="Input Pass" library="resource">
 <arg>${VALID PASS}</arg>
@@ -403,34 +403,34 @@
 <arg>password</arg>
 <arg>${password}</arg>
 <doc>Types the given password into the text field identified by ``locator``.</doc>
-<msg timestamp="20211213 23:49:03.523" level="INFO">Typing password into text field 'password'.</msg>
-<msg timestamp="20211213 23:49:03.549" level="INFO">Temporally setting log level to: NONE</msg>
-<msg timestamp="20211213 23:49:03.586" level="INFO">Log level changed from NONE to INFO.</msg>
-<status status="PASS" starttime="20211213 23:49:03.523" endtime="20211213 23:49:03.586"/>
+<msg timestamp="20211213 23:53:33.175" level="INFO">Typing password into text field 'password'.</msg>
+<msg timestamp="20211213 23:53:33.199" level="INFO">Temporally setting log level to: NONE</msg>
+<msg timestamp="20211213 23:53:33.232" level="INFO">Log level changed from NONE to INFO.</msg>
+<status status="PASS" starttime="20211213 23:53:33.175" endtime="20211213 23:53:33.232"/>
 </kw>
-<status status="PASS" starttime="20211213 23:49:03.522" endtime="20211213 23:49:03.586"/>
+<status status="PASS" starttime="20211213 23:53:33.174" endtime="20211213 23:53:33.232"/>
 </kw>
 <kw name="Click Button" library="SeleniumLibrary">
 <arg>login-button</arg>
 <doc>Clicks the button identified by ``locator``.</doc>
-<msg timestamp="20211213 23:49:03.587" level="INFO">Clicking button 'login-button'.</msg>
-<status status="PASS" starttime="20211213 23:49:03.587" endtime="20211213 23:49:03.648"/>
+<msg timestamp="20211213 23:53:33.232" level="INFO">Clicking button 'login-button'.</msg>
+<status status="PASS" starttime="20211213 23:53:33.232" endtime="20211213 23:53:33.291"/>
 </kw>
 <kw name="Product Page Open" library="resource">
 <kw name="Page Should Contain" library="SeleniumLibrary">
 <arg>Products</arg>
 <doc>Verifies that current page contains ``text``.</doc>
-<msg timestamp="20211213 23:49:03.686" level="INFO">Current page contains text 'Products'.</msg>
-<status status="PASS" starttime="20211213 23:49:03.649" endtime="20211213 23:49:03.686"/>
+<msg timestamp="20211213 23:53:33.301" level="INFO">Current page contains text 'Products'.</msg>
+<status status="PASS" starttime="20211213 23:53:33.291" endtime="20211213 23:53:33.301"/>
 </kw>
-<status status="PASS" starttime="20211213 23:49:03.648" endtime="20211213 23:49:03.686"/>
+<status status="PASS" starttime="20211213 23:53:33.291" endtime="20211213 23:53:33.301"/>
 </kw>
 <kw name="Select From List By Label" library="SeleniumLibrary">
 <arg>${SORT}</arg>
 <arg>Name (A to Z)</arg>
 <doc>Selects options from selection list ``locator`` by ``labels``.</doc>
-<msg timestamp="20211213 23:49:03.688" level="INFO">Selecting options from selection list 'class=product_sort_container' by label Name (A to Z).</msg>
-<status status="PASS" starttime="20211213 23:49:03.687" endtime="20211213 23:49:03.788"/>
+<msg timestamp="20211213 23:53:33.302" level="INFO">Selecting options from selection list 'class=product_sort_container' by label Name (A to Z).</msg>
+<status status="PASS" starttime="20211213 23:53:33.301" endtime="20211213 23:53:33.332"/>
 </kw>
 <kw name="Check Items" library="resource">
 <arg>${PROD4}</arg>
@@ -442,8 +442,8 @@
 <var>${element}</var>
 <arg>${locator}</arg>
 <doc>Returns the first WebElement matching the given ``locator``.</doc>
-<msg timestamp="20211213 23:49:03.799" level="INFO">${element} = &lt;selenium.webdriver.remote.webelement.WebElement (session="c5dce5a1e4b5b320b7ba1a913a1e243c", element="529d8f82-3c01-4bdc-9f2b-73d4163432f5")&gt;</msg>
-<status status="PASS" starttime="20211213 23:49:03.789" endtime="20211213 23:49:03.800"/>
+<msg timestamp="20211213 23:53:33.340" level="INFO">${element} = &lt;selenium.webdriver.remote.webelement.WebElement (session="f5158991fd1b84366664d20e63c2f43e", element="92895987-956f-405d-8be8-a17a4dcabd3f")&gt;</msg>
+<status status="PASS" starttime="20211213 23:53:33.333" endtime="20211213 23:53:33.340"/>
 </kw>
 <kw name="Call Method" library="BuiltIn">
 <var>${children}</var>
@@ -452,11 +452,11 @@
 <arg>by=xpath</arg>
 <arg>value=child::*</arg>
 <doc>Calls the named method of the given object with the provided arguments.</doc>
-<msg timestamp="20211213 23:49:03.810" level="INFO">${children} = [&lt;selenium.webdriver.remote.webelement.WebElement (session="c5dce5a1e4b5b320b7ba1a913a1e243c", element="15f53d22-f4f4-42fc-bf55-ca7900e9ef77")&gt;, &lt;selenium.webdriver.remote.webelement.WebElement (sessi...</msg>
-<status status="PASS" starttime="20211213 23:49:03.800" endtime="20211213 23:49:03.810"/>
+<msg timestamp="20211213 23:53:33.348" level="INFO">${children} = [&lt;selenium.webdriver.remote.webelement.WebElement (session="f5158991fd1b84366664d20e63c2f43e", element="83a5505a-6ed0-4234-a0c3-701629c53c9a")&gt;, &lt;selenium.webdriver.remote.webelement.WebElement (sessi...</msg>
+<status status="PASS" starttime="20211213 23:53:33.340" endtime="20211213 23:53:33.348"/>
 </kw>
-<msg timestamp="20211213 23:49:03.811" level="INFO">${children} = [&lt;selenium.webdriver.remote.webelement.WebElement (session="c5dce5a1e4b5b320b7ba1a913a1e243c", element="15f53d22-f4f4-42fc-bf55-ca7900e9ef77")&gt;, &lt;selenium.webdriver.remote.webelement.WebElement (sessi...</msg>
-<status status="PASS" starttime="20211213 23:49:03.789" endtime="20211213 23:49:03.811"/>
+<msg timestamp="20211213 23:53:33.348" level="INFO">${children} = [&lt;selenium.webdriver.remote.webelement.WebElement (session="f5158991fd1b84366664d20e63c2f43e", element="83a5505a-6ed0-4234-a0c3-701629c53c9a")&gt;, &lt;selenium.webdriver.remote.webelement.WebElement (sessi...</msg>
+<status status="PASS" starttime="20211213 23:53:33.333" endtime="20211213 23:53:33.348"/>
 </kw>
 <kw name="Get Child Webelements" library="resource">
 <var>${child}</var>
@@ -465,8 +465,8 @@
 <var>${element}</var>
 <arg>${locator}</arg>
 <doc>Returns the first WebElement matching the given ``locator``.</doc>
-<msg timestamp="20211213 23:49:03.812" level="INFO">${element} = &lt;selenium.webdriver.remote.webelement.WebElement (session="c5dce5a1e4b5b320b7ba1a913a1e243c", element="15f53d22-f4f4-42fc-bf55-ca7900e9ef77")&gt;</msg>
-<status status="PASS" starttime="20211213 23:49:03.812" endtime="20211213 23:49:03.812"/>
+<msg timestamp="20211213 23:53:33.350" level="INFO">${element} = &lt;selenium.webdriver.remote.webelement.WebElement (session="f5158991fd1b84366664d20e63c2f43e", element="83a5505a-6ed0-4234-a0c3-701629c53c9a")&gt;</msg>
+<status status="PASS" starttime="20211213 23:53:33.349" endtime="20211213 23:53:33.350"/>
 </kw>
 <kw name="Call Method" library="BuiltIn">
 <var>${children}</var>
@@ -475,18 +475,18 @@
 <arg>by=xpath</arg>
 <arg>value=child::*</arg>
 <doc>Calls the named method of the given object with the provided arguments.</doc>
-<msg timestamp="20211213 23:49:03.822" level="INFO">${children} = [&lt;selenium.webdriver.remote.webelement.WebElement (session="c5dce5a1e4b5b320b7ba1a913a1e243c", element="7985492b-6b8b-4b71-bece-13cbe8acbac8")&gt;, &lt;selenium.webdriver.remote.webelement.WebElement (sessi...</msg>
-<status status="PASS" starttime="20211213 23:49:03.813" endtime="20211213 23:49:03.822"/>
+<msg timestamp="20211213 23:53:33.357" level="INFO">${children} = [&lt;selenium.webdriver.remote.webelement.WebElement (session="f5158991fd1b84366664d20e63c2f43e", element="60bdcbce-0f74-418e-9134-aa9a3ece9271")&gt;, &lt;selenium.webdriver.remote.webelement.WebElement (sessi...</msg>
+<status status="PASS" starttime="20211213 23:53:33.350" endtime="20211213 23:53:33.357"/>
 </kw>
-<msg timestamp="20211213 23:49:03.823" level="INFO">${child} = [&lt;selenium.webdriver.remote.webelement.WebElement (session="c5dce5a1e4b5b320b7ba1a913a1e243c", element="7985492b-6b8b-4b71-bece-13cbe8acbac8")&gt;, &lt;selenium.webdriver.remote.webelement.WebElement (sessi...</msg>
-<status status="PASS" starttime="20211213 23:49:03.811" endtime="20211213 23:49:03.823"/>
+<msg timestamp="20211213 23:53:33.357" level="INFO">${child} = [&lt;selenium.webdriver.remote.webelement.WebElement (session="f5158991fd1b84366664d20e63c2f43e", element="60bdcbce-0f74-418e-9134-aa9a3ece9271")&gt;, &lt;selenium.webdriver.remote.webelement.WebElement (sessi...</msg>
+<status status="PASS" starttime="20211213 23:53:33.348" endtime="20211213 23:53:33.357"/>
 </kw>
 <kw name="Element Should Contain" library="SeleniumLibrary">
 <arg>${child}</arg>
 <arg>${first}</arg>
 <doc>Verifies that element ``locator`` contains text ``expected``.</doc>
-<msg timestamp="20211213 23:49:03.835" level="INFO">Element '[&lt;selenium.webdriver.remote.webelement.WebElement (session="c5dce5a1e4b5b320b7ba1a913a1e243c", element="7985492b-6b8b-4b71-bece-13cbe8acbac8")&gt;, &lt;selenium.webdriver.remote.webelement.WebElement (session="c5dce5a1e4b5b320b7ba1a913a1e243c", element="f026acbd-5e14-4878-b82f-c318e626d93b")&gt;]' contains text 'Sauce Labs Backpack'.</msg>
-<status status="PASS" starttime="20211213 23:49:03.823" endtime="20211213 23:49:03.835"/>
+<msg timestamp="20211213 23:53:33.367" level="INFO">Element '[&lt;selenium.webdriver.remote.webelement.WebElement (session="f5158991fd1b84366664d20e63c2f43e", element="60bdcbce-0f74-418e-9134-aa9a3ece9271")&gt;, &lt;selenium.webdriver.remote.webelement.WebElement (session="f5158991fd1b84366664d20e63c2f43e", element="982d3a9a-8f49-45a7-9630-a70b8712e23b")&gt;]' contains text 'Sauce Labs Backpack'.</msg>
+<status status="PASS" starttime="20211213 23:53:33.357" endtime="20211213 23:53:33.368"/>
 </kw>
 <kw name="Get Child Webelements" library="resource">
 <var>${children}</var>
@@ -495,8 +495,8 @@
 <var>${element}</var>
 <arg>${locator}</arg>
 <doc>Returns the first WebElement matching the given ``locator``.</doc>
-<msg timestamp="20211213 23:49:03.842" level="INFO">${element} = &lt;selenium.webdriver.remote.webelement.WebElement (session="c5dce5a1e4b5b320b7ba1a913a1e243c", element="529d8f82-3c01-4bdc-9f2b-73d4163432f5")&gt;</msg>
-<status status="PASS" starttime="20211213 23:49:03.836" endtime="20211213 23:49:03.842"/>
+<msg timestamp="20211213 23:53:33.374" level="INFO">${element} = &lt;selenium.webdriver.remote.webelement.WebElement (session="f5158991fd1b84366664d20e63c2f43e", element="92895987-956f-405d-8be8-a17a4dcabd3f")&gt;</msg>
+<status status="PASS" starttime="20211213 23:53:33.368" endtime="20211213 23:53:33.374"/>
 </kw>
 <kw name="Call Method" library="BuiltIn">
 <var>${children}</var>
@@ -505,11 +505,11 @@
 <arg>by=xpath</arg>
 <arg>value=child::*</arg>
 <doc>Calls the named method of the given object with the provided arguments.</doc>
-<msg timestamp="20211213 23:49:03.846" level="INFO">${children} = [&lt;selenium.webdriver.remote.webelement.WebElement (session="c5dce5a1e4b5b320b7ba1a913a1e243c", element="15f53d22-f4f4-42fc-bf55-ca7900e9ef77")&gt;, &lt;selenium.webdriver.remote.webelement.WebElement (sessi...</msg>
-<status status="PASS" starttime="20211213 23:49:03.842" endtime="20211213 23:49:03.846"/>
+<msg timestamp="20211213 23:53:33.379" level="INFO">${children} = [&lt;selenium.webdriver.remote.webelement.WebElement (session="f5158991fd1b84366664d20e63c2f43e", element="83a5505a-6ed0-4234-a0c3-701629c53c9a")&gt;, &lt;selenium.webdriver.remote.webelement.WebElement (sessi...</msg>
+<status status="PASS" starttime="20211213 23:53:33.374" endtime="20211213 23:53:33.379"/>
 </kw>
-<msg timestamp="20211213 23:49:03.846" level="INFO">${children} = [&lt;selenium.webdriver.remote.webelement.WebElement (session="c5dce5a1e4b5b320b7ba1a913a1e243c", element="15f53d22-f4f4-42fc-bf55-ca7900e9ef77")&gt;, &lt;selenium.webdriver.remote.webelement.WebElement (sessi...</msg>
-<status status="PASS" starttime="20211213 23:49:03.835" endtime="20211213 23:49:03.846"/>
+<msg timestamp="20211213 23:53:33.379" level="INFO">${children} = [&lt;selenium.webdriver.remote.webelement.WebElement (session="f5158991fd1b84366664d20e63c2f43e", element="83a5505a-6ed0-4234-a0c3-701629c53c9a")&gt;, &lt;selenium.webdriver.remote.webelement.WebElement (sessi...</msg>
+<status status="PASS" starttime="20211213 23:53:33.368" endtime="20211213 23:53:33.379"/>
 </kw>
 <kw name="Get Child Webelements" library="resource">
 <var>${child}</var>
@@ -518,8 +518,8 @@
 <var>${element}</var>
 <arg>${locator}</arg>
 <doc>Returns the first WebElement matching the given ``locator``.</doc>
-<msg timestamp="20211213 23:49:03.847" level="INFO">${element} = &lt;selenium.webdriver.remote.webelement.WebElement (session="c5dce5a1e4b5b320b7ba1a913a1e243c", element="a325310c-6526-44f7-83fc-0e2109eae261")&gt;</msg>
-<status status="PASS" starttime="20211213 23:49:03.847" endtime="20211213 23:49:03.847"/>
+<msg timestamp="20211213 23:53:33.380" level="INFO">${element} = &lt;selenium.webdriver.remote.webelement.WebElement (session="f5158991fd1b84366664d20e63c2f43e", element="262c3cb8-42b7-4cc8-a7be-09f92f93d6f7")&gt;</msg>
+<status status="PASS" starttime="20211213 23:53:33.380" endtime="20211213 23:53:33.380"/>
 </kw>
 <kw name="Call Method" library="BuiltIn">
 <var>${children}</var>
@@ -528,56 +528,56 @@
 <arg>by=xpath</arg>
 <arg>value=child::*</arg>
 <doc>Calls the named method of the given object with the provided arguments.</doc>
-<msg timestamp="20211213 23:49:03.859" level="INFO">${children} = [&lt;selenium.webdriver.remote.webelement.WebElement (session="c5dce5a1e4b5b320b7ba1a913a1e243c", element="f432301d-b076-4c05-a426-494b39b3593c")&gt;, &lt;selenium.webdriver.remote.webelement.WebElement (sessi...</msg>
-<status status="PASS" starttime="20211213 23:49:03.847" endtime="20211213 23:49:03.859"/>
+<msg timestamp="20211213 23:53:33.389" level="INFO">${children} = [&lt;selenium.webdriver.remote.webelement.WebElement (session="f5158991fd1b84366664d20e63c2f43e", element="1d7e48f0-0333-47bf-a5ca-535558f6487e")&gt;, &lt;selenium.webdriver.remote.webelement.WebElement (sessi...</msg>
+<status status="PASS" starttime="20211213 23:53:33.380" endtime="20211213 23:53:33.389"/>
 </kw>
-<msg timestamp="20211213 23:49:03.860" level="INFO">${child} = [&lt;selenium.webdriver.remote.webelement.WebElement (session="c5dce5a1e4b5b320b7ba1a913a1e243c", element="f432301d-b076-4c05-a426-494b39b3593c")&gt;, &lt;selenium.webdriver.remote.webelement.WebElement (sessi...</msg>
-<status status="PASS" starttime="20211213 23:49:03.846" endtime="20211213 23:49:03.860"/>
+<msg timestamp="20211213 23:53:33.389" level="INFO">${child} = [&lt;selenium.webdriver.remote.webelement.WebElement (session="f5158991fd1b84366664d20e63c2f43e", element="1d7e48f0-0333-47bf-a5ca-535558f6487e")&gt;, &lt;selenium.webdriver.remote.webelement.WebElement (sessi...</msg>
+<status status="PASS" starttime="20211213 23:53:33.379" endtime="20211213 23:53:33.389"/>
 </kw>
 <kw name="Element Should Contain" library="SeleniumLibrary">
 <arg>${child}</arg>
 <arg>${last}</arg>
 <doc>Verifies that element ``locator`` contains text ``expected``.</doc>
-<msg timestamp="20211213 23:49:03.869" level="INFO">Element '[&lt;selenium.webdriver.remote.webelement.WebElement (session="c5dce5a1e4b5b320b7ba1a913a1e243c", element="f432301d-b076-4c05-a426-494b39b3593c")&gt;, &lt;selenium.webdriver.remote.webelement.WebElement (session="c5dce5a1e4b5b320b7ba1a913a1e243c", element="0ab4a7ac-6b55-4e26-8927-76dbb0024d46")&gt;]' contains text 'Test.allTheThings() T-Shirt (Red)'.</msg>
-<status status="PASS" starttime="20211213 23:49:03.860" endtime="20211213 23:49:03.869"/>
+<msg timestamp="20211213 23:53:33.400" level="INFO">Element '[&lt;selenium.webdriver.remote.webelement.WebElement (session="f5158991fd1b84366664d20e63c2f43e", element="1d7e48f0-0333-47bf-a5ca-535558f6487e")&gt;, &lt;selenium.webdriver.remote.webelement.WebElement (session="f5158991fd1b84366664d20e63c2f43e", element="b6dd7d62-0827-4baa-8a0f-a57ed367be1e")&gt;]' contains text 'Test.allTheThings() T-Shirt (Red)'.</msg>
+<status status="PASS" starttime="20211213 23:53:33.390" endtime="20211213 23:53:33.400"/>
 </kw>
-<status status="PASS" starttime="20211213 23:49:03.789" endtime="20211213 23:49:03.869"/>
+<status status="PASS" starttime="20211213 23:53:33.332" endtime="20211213 23:53:33.400"/>
 </kw>
 <kw name="Close Browser" library="SeleniumLibrary" type="TEARDOWN">
 <doc>Closes the current browser.</doc>
-<status status="PASS" starttime="20211213 23:49:03.871" endtime="20211213 23:49:06.016"/>
+<status status="PASS" starttime="20211213 23:53:33.401" endtime="20211213 23:53:35.542"/>
 </kw>
-<status status="PASS" starttime="20211213 23:49:01.852" endtime="20211213 23:49:06.017"/>
+<status status="PASS" starttime="20211213 23:53:31.404" endtime="20211213 23:53:35.543"/>
 </test>
-<test id="s1-s1-t6" name="5 Sort A-Z">
+<test id="s1-s1-t6" name="6 Sort Z-A">
 <kw name="Setup Browser" library="resource" type="SETUP">
 <kw name="Open Browser" library="SeleniumLibrary">
 <arg>${URL}</arg>
 <arg>${BROWSER}</arg>
 <doc>Opens a new browser instance to the optional ``url``.</doc>
-<msg timestamp="20211213 23:49:06.022" level="INFO">Opening browser 'Chrome' to base url 'https://www.saucedemo.com/'.</msg>
-<status status="PASS" starttime="20211213 23:49:06.022" endtime="20211213 23:49:07.494"/>
+<msg timestamp="20211213 23:53:35.546" level="INFO">Opening browser 'Chrome' to base url 'https://www.saucedemo.com/'.</msg>
+<status status="PASS" starttime="20211213 23:53:35.545" endtime="20211213 23:53:37.175"/>
 </kw>
 <kw name="Maximize Browser Window" library="SeleniumLibrary">
 <doc>Maximizes current browser window.</doc>
-<status status="PASS" starttime="20211213 23:49:07.494" endtime="20211213 23:49:07.619"/>
+<status status="PASS" starttime="20211213 23:53:37.175" endtime="20211213 23:53:37.303"/>
 </kw>
 <kw name="Title Should Be" library="SeleniumLibrary">
 <arg>Swag Labs</arg>
 <doc>Verifies that the current page title equals ``title``.</doc>
-<msg timestamp="20211213 23:49:07.623" level="INFO">Page title is 'Swag Labs'.</msg>
-<status status="PASS" starttime="20211213 23:49:07.619" endtime="20211213 23:49:07.623"/>
+<msg timestamp="20211213 23:53:37.309" level="INFO">Page title is 'Swag Labs'.</msg>
+<status status="PASS" starttime="20211213 23:53:37.303" endtime="20211213 23:53:37.309"/>
 </kw>
 <kw name="Login Page Open" library="resource">
 <kw name="Page Should Contain Button" library="SeleniumLibrary">
 <arg>login-button</arg>
 <doc>Verifies button ``locator`` is found from current page.</doc>
-<msg timestamp="20211213 23:49:07.636" level="INFO">Current page contains input 'login-button'.</msg>
-<status status="PASS" starttime="20211213 23:49:07.624" endtime="20211213 23:49:07.636"/>
+<msg timestamp="20211213 23:53:37.325" level="INFO">Current page contains input 'login-button'.</msg>
+<status status="PASS" starttime="20211213 23:53:37.309" endtime="20211213 23:53:37.325"/>
 </kw>
-<status status="PASS" starttime="20211213 23:49:07.623" endtime="20211213 23:49:07.636"/>
+<status status="PASS" starttime="20211213 23:53:37.309" endtime="20211213 23:53:37.325"/>
 </kw>
-<status status="PASS" starttime="20211213 23:49:06.021" endtime="20211213 23:49:07.636"/>
+<status status="PASS" starttime="20211213 23:53:35.545" endtime="20211213 23:53:37.326"/>
 </kw>
 <kw name="Input User" library="resource">
 <arg>${STANDARD}</arg>
@@ -585,10 +585,10 @@
 <arg>user-name</arg>
 <arg>${username}</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<msg timestamp="20211213 23:49:07.637" level="INFO">Typing text 'standard_user' into text field 'user-name'.</msg>
-<status status="PASS" starttime="20211213 23:49:07.637" endtime="20211213 23:49:07.719"/>
+<msg timestamp="20211213 23:53:37.327" level="INFO">Typing text 'standard_user' into text field 'user-name'.</msg>
+<status status="PASS" starttime="20211213 23:53:37.327" endtime="20211213 23:53:37.408"/>
 </kw>
-<status status="PASS" starttime="20211213 23:49:07.636" endtime="20211213 23:49:07.719"/>
+<status status="PASS" starttime="20211213 23:53:37.326" endtime="20211213 23:53:37.408"/>
 </kw>
 <kw name="Input Pass" library="resource">
 <arg>${VALID PASS}</arg>
@@ -596,34 +596,34 @@
 <arg>password</arg>
 <arg>${password}</arg>
 <doc>Types the given password into the text field identified by ``locator``.</doc>
-<msg timestamp="20211213 23:49:07.720" level="INFO">Typing password into text field 'password'.</msg>
-<msg timestamp="20211213 23:49:07.745" level="INFO">Temporally setting log level to: NONE</msg>
-<msg timestamp="20211213 23:49:07.774" level="INFO">Log level changed from NONE to INFO.</msg>
-<status status="PASS" starttime="20211213 23:49:07.720" endtime="20211213 23:49:07.774"/>
+<msg timestamp="20211213 23:53:37.409" level="INFO">Typing password into text field 'password'.</msg>
+<msg timestamp="20211213 23:53:37.434" level="INFO">Temporally setting log level to: NONE</msg>
+<msg timestamp="20211213 23:53:37.461" level="INFO">Log level changed from NONE to INFO.</msg>
+<status status="PASS" starttime="20211213 23:53:37.409" endtime="20211213 23:53:37.462"/>
 </kw>
-<status status="PASS" starttime="20211213 23:49:07.720" endtime="20211213 23:49:07.774"/>
+<status status="PASS" starttime="20211213 23:53:37.409" endtime="20211213 23:53:37.462"/>
 </kw>
 <kw name="Click Button" library="SeleniumLibrary">
 <arg>login-button</arg>
 <doc>Clicks the button identified by ``locator``.</doc>
-<msg timestamp="20211213 23:49:07.775" level="INFO">Clicking button 'login-button'.</msg>
-<status status="PASS" starttime="20211213 23:49:07.775" endtime="20211213 23:49:07.831"/>
+<msg timestamp="20211213 23:53:37.463" level="INFO">Clicking button 'login-button'.</msg>
+<status status="PASS" starttime="20211213 23:53:37.462" endtime="20211213 23:53:37.521"/>
 </kw>
 <kw name="Product Page Open" library="resource">
 <kw name="Page Should Contain" library="SeleniumLibrary">
 <arg>Products</arg>
 <doc>Verifies that current page contains ``text``.</doc>
-<msg timestamp="20211213 23:49:07.841" level="INFO">Current page contains text 'Products'.</msg>
-<status status="PASS" starttime="20211213 23:49:07.832" endtime="20211213 23:49:07.841"/>
+<msg timestamp="20211213 23:53:37.533" level="INFO">Current page contains text 'Products'.</msg>
+<status status="PASS" starttime="20211213 23:53:37.522" endtime="20211213 23:53:37.533"/>
 </kw>
-<status status="PASS" starttime="20211213 23:49:07.832" endtime="20211213 23:49:07.841"/>
+<status status="PASS" starttime="20211213 23:53:37.521" endtime="20211213 23:53:37.533"/>
 </kw>
 <kw name="Select From List By Label" library="SeleniumLibrary">
 <arg>${SORT}</arg>
 <arg>Name (Z to A)</arg>
 <doc>Selects options from selection list ``locator`` by ``labels``.</doc>
-<msg timestamp="20211213 23:49:07.842" level="INFO">Selecting options from selection list 'class=product_sort_container' by label Name (Z to A).</msg>
-<status status="PASS" starttime="20211213 23:49:07.841" endtime="20211213 23:49:07.889"/>
+<msg timestamp="20211213 23:53:37.533" level="INFO">Selecting options from selection list 'class=product_sort_container' by label Name (Z to A).</msg>
+<status status="PASS" starttime="20211213 23:53:37.533" endtime="20211213 23:53:37.703"/>
 </kw>
 <kw name="Check Items" library="resource">
 <arg>${PROD3}</arg>
@@ -635,8 +635,8 @@
 <var>${element}</var>
 <arg>${locator}</arg>
 <doc>Returns the first WebElement matching the given ``locator``.</doc>
-<msg timestamp="20211213 23:49:07.898" level="INFO">${element} = &lt;selenium.webdriver.remote.webelement.WebElement (session="afd8259d1ebcde94361da8b6df446798", element="cb5794a9-10f3-4e05-9a1e-33f0115abd53")&gt;</msg>
-<status status="PASS" starttime="20211213 23:49:07.890" endtime="20211213 23:49:07.898"/>
+<msg timestamp="20211213 23:53:37.720" level="INFO">${element} = &lt;selenium.webdriver.remote.webelement.WebElement (session="29917e7866c825605187e8e919776de1", element="f897e046-2dee-47ea-8437-17e1cef326a5")&gt;</msg>
+<status status="PASS" starttime="20211213 23:53:37.704" endtime="20211213 23:53:37.720"/>
 </kw>
 <kw name="Call Method" library="BuiltIn">
 <var>${children}</var>
@@ -645,11 +645,11 @@
 <arg>by=xpath</arg>
 <arg>value=child::*</arg>
 <doc>Calls the named method of the given object with the provided arguments.</doc>
-<msg timestamp="20211213 23:49:07.905" level="INFO">${children} = [&lt;selenium.webdriver.remote.webelement.WebElement (session="afd8259d1ebcde94361da8b6df446798", element="49b463c5-b5dd-4e41-a435-d62ca5d9ad41")&gt;, &lt;selenium.webdriver.remote.webelement.WebElement (sessi...</msg>
-<status status="PASS" starttime="20211213 23:49:07.898" endtime="20211213 23:49:07.905"/>
+<msg timestamp="20211213 23:53:37.730" level="INFO">${children} = [&lt;selenium.webdriver.remote.webelement.WebElement (session="29917e7866c825605187e8e919776de1", element="20d063ab-96ae-4d16-a2dd-7829d50700cd")&gt;, &lt;selenium.webdriver.remote.webelement.WebElement (sessi...</msg>
+<status status="PASS" starttime="20211213 23:53:37.721" endtime="20211213 23:53:37.731"/>
 </kw>
-<msg timestamp="20211213 23:49:07.905" level="INFO">${children} = [&lt;selenium.webdriver.remote.webelement.WebElement (session="afd8259d1ebcde94361da8b6df446798", element="49b463c5-b5dd-4e41-a435-d62ca5d9ad41")&gt;, &lt;selenium.webdriver.remote.webelement.WebElement (sessi...</msg>
-<status status="PASS" starttime="20211213 23:49:07.890" endtime="20211213 23:49:07.905"/>
+<msg timestamp="20211213 23:53:37.731" level="INFO">${children} = [&lt;selenium.webdriver.remote.webelement.WebElement (session="29917e7866c825605187e8e919776de1", element="20d063ab-96ae-4d16-a2dd-7829d50700cd")&gt;, &lt;selenium.webdriver.remote.webelement.WebElement (sessi...</msg>
+<status status="PASS" starttime="20211213 23:53:37.704" endtime="20211213 23:53:37.731"/>
 </kw>
 <kw name="Get Child Webelements" library="resource">
 <var>${child}</var>
@@ -658,8 +658,8 @@
 <var>${element}</var>
 <arg>${locator}</arg>
 <doc>Returns the first WebElement matching the given ``locator``.</doc>
-<msg timestamp="20211213 23:49:07.906" level="INFO">${element} = &lt;selenium.webdriver.remote.webelement.WebElement (session="afd8259d1ebcde94361da8b6df446798", element="49b463c5-b5dd-4e41-a435-d62ca5d9ad41")&gt;</msg>
-<status status="PASS" starttime="20211213 23:49:07.905" endtime="20211213 23:49:07.906"/>
+<msg timestamp="20211213 23:53:37.732" level="INFO">${element} = &lt;selenium.webdriver.remote.webelement.WebElement (session="29917e7866c825605187e8e919776de1", element="20d063ab-96ae-4d16-a2dd-7829d50700cd")&gt;</msg>
+<status status="PASS" starttime="20211213 23:53:37.731" endtime="20211213 23:53:37.732"/>
 </kw>
 <kw name="Call Method" library="BuiltIn">
 <var>${children}</var>
@@ -668,18 +668,18 @@
 <arg>by=xpath</arg>
 <arg>value=child::*</arg>
 <doc>Calls the named method of the given object with the provided arguments.</doc>
-<msg timestamp="20211213 23:49:07.912" level="INFO">${children} = [&lt;selenium.webdriver.remote.webelement.WebElement (session="afd8259d1ebcde94361da8b6df446798", element="8f9ea654-7678-4b68-925b-53115b806464")&gt;, &lt;selenium.webdriver.remote.webelement.WebElement (sessi...</msg>
-<status status="PASS" starttime="20211213 23:49:07.906" endtime="20211213 23:49:07.912"/>
+<msg timestamp="20211213 23:53:37.739" level="INFO">${children} = [&lt;selenium.webdriver.remote.webelement.WebElement (session="29917e7866c825605187e8e919776de1", element="6d11743e-49b1-4cae-8d69-8d7fe0b06e05")&gt;, &lt;selenium.webdriver.remote.webelement.WebElement (sessi...</msg>
+<status status="PASS" starttime="20211213 23:53:37.732" endtime="20211213 23:53:37.740"/>
 </kw>
-<msg timestamp="20211213 23:49:07.912" level="INFO">${child} = [&lt;selenium.webdriver.remote.webelement.WebElement (session="afd8259d1ebcde94361da8b6df446798", element="8f9ea654-7678-4b68-925b-53115b806464")&gt;, &lt;selenium.webdriver.remote.webelement.WebElement (sessi...</msg>
-<status status="PASS" starttime="20211213 23:49:07.905" endtime="20211213 23:49:07.913"/>
+<msg timestamp="20211213 23:53:37.740" level="INFO">${child} = [&lt;selenium.webdriver.remote.webelement.WebElement (session="29917e7866c825605187e8e919776de1", element="6d11743e-49b1-4cae-8d69-8d7fe0b06e05")&gt;, &lt;selenium.webdriver.remote.webelement.WebElement (sessi...</msg>
+<status status="PASS" starttime="20211213 23:53:37.731" endtime="20211213 23:53:37.740"/>
 </kw>
 <kw name="Element Should Contain" library="SeleniumLibrary">
 <arg>${child}</arg>
 <arg>${first}</arg>
 <doc>Verifies that element ``locator`` contains text ``expected``.</doc>
-<msg timestamp="20211213 23:49:07.924" level="INFO">Element '[&lt;selenium.webdriver.remote.webelement.WebElement (session="afd8259d1ebcde94361da8b6df446798", element="8f9ea654-7678-4b68-925b-53115b806464")&gt;, &lt;selenium.webdriver.remote.webelement.WebElement (session="afd8259d1ebcde94361da8b6df446798", element="bab0dcdf-7698-4412-b884-6841c7c9ddb2")&gt;]' contains text 'Test.allTheThings() T-Shirt (Red)'.</msg>
-<status status="PASS" starttime="20211213 23:49:07.913" endtime="20211213 23:49:07.924"/>
+<msg timestamp="20211213 23:53:37.750" level="INFO">Element '[&lt;selenium.webdriver.remote.webelement.WebElement (session="29917e7866c825605187e8e919776de1", element="6d11743e-49b1-4cae-8d69-8d7fe0b06e05")&gt;, &lt;selenium.webdriver.remote.webelement.WebElement (session="29917e7866c825605187e8e919776de1", element="affca59a-b79d-47f2-89f3-aa1a61280696")&gt;]' contains text 'Test.allTheThings() T-Shirt (Red)'.</msg>
+<status status="PASS" starttime="20211213 23:53:37.740" endtime="20211213 23:53:37.750"/>
 </kw>
 <kw name="Get Child Webelements" library="resource">
 <var>${children}</var>
@@ -688,8 +688,8 @@
 <var>${element}</var>
 <arg>${locator}</arg>
 <doc>Returns the first WebElement matching the given ``locator``.</doc>
-<msg timestamp="20211213 23:49:07.932" level="INFO">${element} = &lt;selenium.webdriver.remote.webelement.WebElement (session="afd8259d1ebcde94361da8b6df446798", element="cb5794a9-10f3-4e05-9a1e-33f0115abd53")&gt;</msg>
-<status status="PASS" starttime="20211213 23:49:07.925" endtime="20211213 23:49:07.932"/>
+<msg timestamp="20211213 23:53:37.756" level="INFO">${element} = &lt;selenium.webdriver.remote.webelement.WebElement (session="29917e7866c825605187e8e919776de1", element="f897e046-2dee-47ea-8437-17e1cef326a5")&gt;</msg>
+<status status="PASS" starttime="20211213 23:53:37.750" endtime="20211213 23:53:37.756"/>
 </kw>
 <kw name="Call Method" library="BuiltIn">
 <var>${children}</var>
@@ -698,11 +698,11 @@
 <arg>by=xpath</arg>
 <arg>value=child::*</arg>
 <doc>Calls the named method of the given object with the provided arguments.</doc>
-<msg timestamp="20211213 23:49:07.937" level="INFO">${children} = [&lt;selenium.webdriver.remote.webelement.WebElement (session="afd8259d1ebcde94361da8b6df446798", element="49b463c5-b5dd-4e41-a435-d62ca5d9ad41")&gt;, &lt;selenium.webdriver.remote.webelement.WebElement (sessi...</msg>
-<status status="PASS" starttime="20211213 23:49:07.932" endtime="20211213 23:49:07.937"/>
+<msg timestamp="20211213 23:53:37.761" level="INFO">${children} = [&lt;selenium.webdriver.remote.webelement.WebElement (session="29917e7866c825605187e8e919776de1", element="20d063ab-96ae-4d16-a2dd-7829d50700cd")&gt;, &lt;selenium.webdriver.remote.webelement.WebElement (sessi...</msg>
+<status status="PASS" starttime="20211213 23:53:37.756" endtime="20211213 23:53:37.761"/>
 </kw>
-<msg timestamp="20211213 23:49:07.937" level="INFO">${children} = [&lt;selenium.webdriver.remote.webelement.WebElement (session="afd8259d1ebcde94361da8b6df446798", element="49b463c5-b5dd-4e41-a435-d62ca5d9ad41")&gt;, &lt;selenium.webdriver.remote.webelement.WebElement (sessi...</msg>
-<status status="PASS" starttime="20211213 23:49:07.925" endtime="20211213 23:49:07.937"/>
+<msg timestamp="20211213 23:53:37.761" level="INFO">${children} = [&lt;selenium.webdriver.remote.webelement.WebElement (session="29917e7866c825605187e8e919776de1", element="20d063ab-96ae-4d16-a2dd-7829d50700cd")&gt;, &lt;selenium.webdriver.remote.webelement.WebElement (sessi...</msg>
+<status status="PASS" starttime="20211213 23:53:37.750" endtime="20211213 23:53:37.761"/>
 </kw>
 <kw name="Get Child Webelements" library="resource">
 <var>${child}</var>
@@ -711,8 +711,8 @@
 <var>${element}</var>
 <arg>${locator}</arg>
 <doc>Returns the first WebElement matching the given ``locator``.</doc>
-<msg timestamp="20211213 23:49:07.938" level="INFO">${element} = &lt;selenium.webdriver.remote.webelement.WebElement (session="afd8259d1ebcde94361da8b6df446798", element="88fe6131-2a94-46a2-ab4f-30d2c16a2b0e")&gt;</msg>
-<status status="PASS" starttime="20211213 23:49:07.938" endtime="20211213 23:49:07.938"/>
+<msg timestamp="20211213 23:53:37.763" level="INFO">${element} = &lt;selenium.webdriver.remote.webelement.WebElement (session="29917e7866c825605187e8e919776de1", element="de5282bd-7f57-4cb6-8287-5492c8c6aa9f")&gt;</msg>
+<status status="PASS" starttime="20211213 23:53:37.763" endtime="20211213 23:53:37.763"/>
 </kw>
 <kw name="Call Method" library="BuiltIn">
 <var>${children}</var>
@@ -721,46 +721,431 @@
 <arg>by=xpath</arg>
 <arg>value=child::*</arg>
 <doc>Calls the named method of the given object with the provided arguments.</doc>
-<msg timestamp="20211213 23:49:07.945" level="INFO">${children} = [&lt;selenium.webdriver.remote.webelement.WebElement (session="afd8259d1ebcde94361da8b6df446798", element="cb2f5376-388c-40e3-b644-da7dca7805be")&gt;, &lt;selenium.webdriver.remote.webelement.WebElement (sessi...</msg>
-<status status="PASS" starttime="20211213 23:49:07.938" endtime="20211213 23:49:07.945"/>
+<msg timestamp="20211213 23:53:37.772" level="INFO">${children} = [&lt;selenium.webdriver.remote.webelement.WebElement (session="29917e7866c825605187e8e919776de1", element="4fff9f3f-994f-453e-8545-4bbb70830c07")&gt;, &lt;selenium.webdriver.remote.webelement.WebElement (sessi...</msg>
+<status status="PASS" starttime="20211213 23:53:37.763" endtime="20211213 23:53:37.772"/>
 </kw>
-<msg timestamp="20211213 23:49:07.945" level="INFO">${child} = [&lt;selenium.webdriver.remote.webelement.WebElement (session="afd8259d1ebcde94361da8b6df446798", element="cb2f5376-388c-40e3-b644-da7dca7805be")&gt;, &lt;selenium.webdriver.remote.webelement.WebElement (sessi...</msg>
-<status status="PASS" starttime="20211213 23:49:07.937" endtime="20211213 23:49:07.945"/>
+<msg timestamp="20211213 23:53:37.772" level="INFO">${child} = [&lt;selenium.webdriver.remote.webelement.WebElement (session="29917e7866c825605187e8e919776de1", element="4fff9f3f-994f-453e-8545-4bbb70830c07")&gt;, &lt;selenium.webdriver.remote.webelement.WebElement (sessi...</msg>
+<status status="PASS" starttime="20211213 23:53:37.761" endtime="20211213 23:53:37.772"/>
 </kw>
 <kw name="Element Should Contain" library="SeleniumLibrary">
 <arg>${child}</arg>
 <arg>${last}</arg>
 <doc>Verifies that element ``locator`` contains text ``expected``.</doc>
-<msg timestamp="20211213 23:49:07.957" level="INFO">Element '[&lt;selenium.webdriver.remote.webelement.WebElement (session="afd8259d1ebcde94361da8b6df446798", element="cb2f5376-388c-40e3-b644-da7dca7805be")&gt;, &lt;selenium.webdriver.remote.webelement.WebElement (session="afd8259d1ebcde94361da8b6df446798", element="7c15ecfa-2459-4182-87c3-cfba25ec0aa0")&gt;]' contains text 'Sauce Labs Backpack'.</msg>
-<status status="PASS" starttime="20211213 23:49:07.946" endtime="20211213 23:49:07.957"/>
+<msg timestamp="20211213 23:53:37.783" level="INFO">Element '[&lt;selenium.webdriver.remote.webelement.WebElement (session="29917e7866c825605187e8e919776de1", element="4fff9f3f-994f-453e-8545-4bbb70830c07")&gt;, &lt;selenium.webdriver.remote.webelement.WebElement (session="29917e7866c825605187e8e919776de1", element="4557bb6d-eb7f-41aa-8fbf-b82b7b120a0f")&gt;]' contains text 'Sauce Labs Backpack'.</msg>
+<status status="PASS" starttime="20211213 23:53:37.772" endtime="20211213 23:53:37.783"/>
 </kw>
-<status status="PASS" starttime="20211213 23:49:07.890" endtime="20211213 23:49:07.958"/>
+<status status="PASS" starttime="20211213 23:53:37.703" endtime="20211213 23:53:37.783"/>
 </kw>
 <kw name="Close Browser" library="SeleniumLibrary" type="TEARDOWN">
 <doc>Closes the current browser.</doc>
-<status status="PASS" starttime="20211213 23:49:07.958" endtime="20211213 23:49:10.086"/>
+<status status="PASS" starttime="20211213 23:53:37.784" endtime="20211213 23:53:39.927"/>
 </kw>
-<status status="PASS" starttime="20211213 23:49:06.021" endtime="20211213 23:49:10.087"/>
+<status status="PASS" starttime="20211213 23:53:35.544" endtime="20211213 23:53:39.928"/>
+</test>
+<test id="s1-s1-t7" name="7 Sort Lo-Hi">
+<kw name="Setup Browser" library="resource" type="SETUP">
+<kw name="Open Browser" library="SeleniumLibrary">
+<arg>${URL}</arg>
+<arg>${BROWSER}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20211213 23:53:39.933" level="INFO">Opening browser 'Chrome' to base url 'https://www.saucedemo.com/'.</msg>
+<status status="PASS" starttime="20211213 23:53:39.932" endtime="20211213 23:53:41.538"/>
+</kw>
+<kw name="Maximize Browser Window" library="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" starttime="20211213 23:53:41.538" endtime="20211213 23:53:41.666"/>
+</kw>
+<kw name="Title Should Be" library="SeleniumLibrary">
+<arg>Swag Labs</arg>
+<doc>Verifies that the current page title equals ``title``.</doc>
+<msg timestamp="20211213 23:53:41.672" level="INFO">Page title is 'Swag Labs'.</msg>
+<status status="PASS" starttime="20211213 23:53:41.666" endtime="20211213 23:53:41.672"/>
+</kw>
+<kw name="Login Page Open" library="resource">
+<kw name="Page Should Contain Button" library="SeleniumLibrary">
+<arg>login-button</arg>
+<doc>Verifies button ``locator`` is found from current page.</doc>
+<msg timestamp="20211213 23:53:41.686" level="INFO">Current page contains input 'login-button'.</msg>
+<status status="PASS" starttime="20211213 23:53:41.672" endtime="20211213 23:53:41.686"/>
+</kw>
+<status status="PASS" starttime="20211213 23:53:41.672" endtime="20211213 23:53:41.686"/>
+</kw>
+<status status="PASS" starttime="20211213 23:53:39.932" endtime="20211213 23:53:41.686"/>
+</kw>
+<kw name="Input User" library="resource">
+<arg>${STANDARD}</arg>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>user-name</arg>
+<arg>${username}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20211213 23:53:41.688" level="INFO">Typing text 'standard_user' into text field 'user-name'.</msg>
+<status status="PASS" starttime="20211213 23:53:41.687" endtime="20211213 23:53:41.761"/>
+</kw>
+<status status="PASS" starttime="20211213 23:53:41.687" endtime="20211213 23:53:41.761"/>
+</kw>
+<kw name="Input Pass" library="resource">
+<arg>${VALID PASS}</arg>
+<kw name="Input Password" library="SeleniumLibrary">
+<arg>password</arg>
+<arg>${password}</arg>
+<doc>Types the given password into the text field identified by ``locator``.</doc>
+<msg timestamp="20211213 23:53:41.762" level="INFO">Typing password into text field 'password'.</msg>
+<msg timestamp="20211213 23:53:41.787" level="INFO">Temporally setting log level to: NONE</msg>
+<msg timestamp="20211213 23:53:41.823" level="INFO">Log level changed from NONE to INFO.</msg>
+<status status="PASS" starttime="20211213 23:53:41.762" endtime="20211213 23:53:41.823"/>
+</kw>
+<status status="PASS" starttime="20211213 23:53:41.762" endtime="20211213 23:53:41.823"/>
+</kw>
+<kw name="Click Button" library="SeleniumLibrary">
+<arg>login-button</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<msg timestamp="20211213 23:53:41.824" level="INFO">Clicking button 'login-button'.</msg>
+<status status="PASS" starttime="20211213 23:53:41.824" endtime="20211213 23:53:41.884"/>
+</kw>
+<kw name="Product Page Open" library="resource">
+<kw name="Page Should Contain" library="SeleniumLibrary">
+<arg>Products</arg>
+<doc>Verifies that current page contains ``text``.</doc>
+<msg timestamp="20211213 23:53:41.895" level="INFO">Current page contains text 'Products'.</msg>
+<status status="PASS" starttime="20211213 23:53:41.885" endtime="20211213 23:53:41.895"/>
+</kw>
+<status status="PASS" starttime="20211213 23:53:41.884" endtime="20211213 23:53:41.895"/>
+</kw>
+<kw name="Select From List By Label" library="SeleniumLibrary">
+<arg>${SORT}</arg>
+<arg>Price (low to high)</arg>
+<doc>Selects options from selection list ``locator`` by ``labels``.</doc>
+<msg timestamp="20211213 23:53:41.896" level="INFO">Selecting options from selection list 'class=product_sort_container' by label Price (low to high).</msg>
+<status status="PASS" starttime="20211213 23:53:41.896" endtime="20211213 23:53:41.980"/>
+</kw>
+<kw name="Check Items" library="resource">
+<arg>${PROD2}</arg>
+<arg>${PROD5}</arg>
+<kw name="Get Child Webelements" library="resource">
+<var>${children}</var>
+<arg>class=inventory_list</arg>
+<kw name="Get WebElement" library="SeleniumLibrary">
+<var>${element}</var>
+<arg>${locator}</arg>
+<doc>Returns the first WebElement matching the given ``locator``.</doc>
+<msg timestamp="20211213 23:53:41.995" level="INFO">${element} = &lt;selenium.webdriver.remote.webelement.WebElement (session="76f36dcb41898d7dd00318a6664679a6", element="537ba00f-c89c-4534-a677-2279256be6f8")&gt;</msg>
+<status status="PASS" starttime="20211213 23:53:41.982" endtime="20211213 23:53:41.996"/>
+</kw>
+<kw name="Call Method" library="BuiltIn">
+<var>${children}</var>
+<arg>${element}</arg>
+<arg>find_elements</arg>
+<arg>by=xpath</arg>
+<arg>value=child::*</arg>
+<doc>Calls the named method of the given object with the provided arguments.</doc>
+<msg timestamp="20211213 23:53:42.005" level="INFO">${children} = [&lt;selenium.webdriver.remote.webelement.WebElement (session="76f36dcb41898d7dd00318a6664679a6", element="716cfc69-2a4a-49bd-b17e-c1c5675c36b6")&gt;, &lt;selenium.webdriver.remote.webelement.WebElement (sessi...</msg>
+<status status="PASS" starttime="20211213 23:53:41.996" endtime="20211213 23:53:42.005"/>
+</kw>
+<msg timestamp="20211213 23:53:42.005" level="INFO">${children} = [&lt;selenium.webdriver.remote.webelement.WebElement (session="76f36dcb41898d7dd00318a6664679a6", element="716cfc69-2a4a-49bd-b17e-c1c5675c36b6")&gt;, &lt;selenium.webdriver.remote.webelement.WebElement (sessi...</msg>
+<status status="PASS" starttime="20211213 23:53:41.981" endtime="20211213 23:53:42.005"/>
+</kw>
+<kw name="Get Child Webelements" library="resource">
+<var>${child}</var>
+<arg>${children[0]}</arg>
+<kw name="Get WebElement" library="SeleniumLibrary">
+<var>${element}</var>
+<arg>${locator}</arg>
+<doc>Returns the first WebElement matching the given ``locator``.</doc>
+<msg timestamp="20211213 23:53:42.006" level="INFO">${element} = &lt;selenium.webdriver.remote.webelement.WebElement (session="76f36dcb41898d7dd00318a6664679a6", element="716cfc69-2a4a-49bd-b17e-c1c5675c36b6")&gt;</msg>
+<status status="PASS" starttime="20211213 23:53:42.006" endtime="20211213 23:53:42.006"/>
+</kw>
+<kw name="Call Method" library="BuiltIn">
+<var>${children}</var>
+<arg>${element}</arg>
+<arg>find_elements</arg>
+<arg>by=xpath</arg>
+<arg>value=child::*</arg>
+<doc>Calls the named method of the given object with the provided arguments.</doc>
+<msg timestamp="20211213 23:53:42.028" level="INFO">${children} = [&lt;selenium.webdriver.remote.webelement.WebElement (session="76f36dcb41898d7dd00318a6664679a6", element="e845ba40-00f4-4455-88fc-03a918f8b834")&gt;, &lt;selenium.webdriver.remote.webelement.WebElement (sessi...</msg>
+<status status="PASS" starttime="20211213 23:53:42.006" endtime="20211213 23:53:42.028"/>
+</kw>
+<msg timestamp="20211213 23:53:42.028" level="INFO">${child} = [&lt;selenium.webdriver.remote.webelement.WebElement (session="76f36dcb41898d7dd00318a6664679a6", element="e845ba40-00f4-4455-88fc-03a918f8b834")&gt;, &lt;selenium.webdriver.remote.webelement.WebElement (sessi...</msg>
+<status status="PASS" starttime="20211213 23:53:42.005" endtime="20211213 23:53:42.028"/>
+</kw>
+<kw name="Element Should Contain" library="SeleniumLibrary">
+<arg>${child}</arg>
+<arg>${first}</arg>
+<doc>Verifies that element ``locator`` contains text ``expected``.</doc>
+<msg timestamp="20211213 23:53:42.071" level="INFO">Element '[&lt;selenium.webdriver.remote.webelement.WebElement (session="76f36dcb41898d7dd00318a6664679a6", element="e845ba40-00f4-4455-88fc-03a918f8b834")&gt;, &lt;selenium.webdriver.remote.webelement.WebElement (session="76f36dcb41898d7dd00318a6664679a6", element="8a793e1f-b3fe-4a18-ae2a-d607c591aacf")&gt;]' contains text 'Sauce Labs Onesie'.</msg>
+<status status="PASS" starttime="20211213 23:53:42.028" endtime="20211213 23:53:42.071"/>
+</kw>
+<kw name="Get Child Webelements" library="resource">
+<var>${children}</var>
+<arg>class=inventory_list</arg>
+<kw name="Get WebElement" library="SeleniumLibrary">
+<var>${element}</var>
+<arg>${locator}</arg>
+<doc>Returns the first WebElement matching the given ``locator``.</doc>
+<msg timestamp="20211213 23:53:42.105" level="INFO">${element} = &lt;selenium.webdriver.remote.webelement.WebElement (session="76f36dcb41898d7dd00318a6664679a6", element="537ba00f-c89c-4534-a677-2279256be6f8")&gt;</msg>
+<status status="PASS" starttime="20211213 23:53:42.072" endtime="20211213 23:53:42.105"/>
+</kw>
+<kw name="Call Method" library="BuiltIn">
+<var>${children}</var>
+<arg>${element}</arg>
+<arg>find_elements</arg>
+<arg>by=xpath</arg>
+<arg>value=child::*</arg>
+<doc>Calls the named method of the given object with the provided arguments.</doc>
+<msg timestamp="20211213 23:53:42.110" level="INFO">${children} = [&lt;selenium.webdriver.remote.webelement.WebElement (session="76f36dcb41898d7dd00318a6664679a6", element="716cfc69-2a4a-49bd-b17e-c1c5675c36b6")&gt;, &lt;selenium.webdriver.remote.webelement.WebElement (sessi...</msg>
+<status status="PASS" starttime="20211213 23:53:42.105" endtime="20211213 23:53:42.110"/>
+</kw>
+<msg timestamp="20211213 23:53:42.110" level="INFO">${children} = [&lt;selenium.webdriver.remote.webelement.WebElement (session="76f36dcb41898d7dd00318a6664679a6", element="716cfc69-2a4a-49bd-b17e-c1c5675c36b6")&gt;, &lt;selenium.webdriver.remote.webelement.WebElement (sessi...</msg>
+<status status="PASS" starttime="20211213 23:53:42.072" endtime="20211213 23:53:42.110"/>
+</kw>
+<kw name="Get Child Webelements" library="resource">
+<var>${child}</var>
+<arg>${children[5]}</arg>
+<kw name="Get WebElement" library="SeleniumLibrary">
+<var>${element}</var>
+<arg>${locator}</arg>
+<doc>Returns the first WebElement matching the given ``locator``.</doc>
+<msg timestamp="20211213 23:53:42.112" level="INFO">${element} = &lt;selenium.webdriver.remote.webelement.WebElement (session="76f36dcb41898d7dd00318a6664679a6", element="7b355d64-5d4e-4a0e-8b32-be56a669601c")&gt;</msg>
+<status status="PASS" starttime="20211213 23:53:42.112" endtime="20211213 23:53:42.112"/>
+</kw>
+<kw name="Call Method" library="BuiltIn">
+<var>${children}</var>
+<arg>${element}</arg>
+<arg>find_elements</arg>
+<arg>by=xpath</arg>
+<arg>value=child::*</arg>
+<doc>Calls the named method of the given object with the provided arguments.</doc>
+<msg timestamp="20211213 23:53:42.122" level="INFO">${children} = [&lt;selenium.webdriver.remote.webelement.WebElement (session="76f36dcb41898d7dd00318a6664679a6", element="c268cbe4-4981-4217-b896-35bf291916c8")&gt;, &lt;selenium.webdriver.remote.webelement.WebElement (sessi...</msg>
+<status status="PASS" starttime="20211213 23:53:42.112" endtime="20211213 23:53:42.122"/>
+</kw>
+<msg timestamp="20211213 23:53:42.123" level="INFO">${child} = [&lt;selenium.webdriver.remote.webelement.WebElement (session="76f36dcb41898d7dd00318a6664679a6", element="c268cbe4-4981-4217-b896-35bf291916c8")&gt;, &lt;selenium.webdriver.remote.webelement.WebElement (sessi...</msg>
+<status status="PASS" starttime="20211213 23:53:42.111" endtime="20211213 23:53:42.123"/>
+</kw>
+<kw name="Element Should Contain" library="SeleniumLibrary">
+<arg>${child}</arg>
+<arg>${last}</arg>
+<doc>Verifies that element ``locator`` contains text ``expected``.</doc>
+<msg timestamp="20211213 23:53:42.136" level="INFO">Element '[&lt;selenium.webdriver.remote.webelement.WebElement (session="76f36dcb41898d7dd00318a6664679a6", element="c268cbe4-4981-4217-b896-35bf291916c8")&gt;, &lt;selenium.webdriver.remote.webelement.WebElement (session="76f36dcb41898d7dd00318a6664679a6", element="57f5aa3f-d66b-4eff-ba31-4cc6b06d3eb5")&gt;]' contains text 'Sauce Labs Fleece Jacket'.</msg>
+<status status="PASS" starttime="20211213 23:53:42.123" endtime="20211213 23:53:42.137"/>
+</kw>
+<status status="PASS" starttime="20211213 23:53:41.981" endtime="20211213 23:53:42.137"/>
+</kw>
+<kw name="Close Browser" library="SeleniumLibrary" type="TEARDOWN">
+<doc>Closes the current browser.</doc>
+<status status="PASS" starttime="20211213 23:53:42.137" endtime="20211213 23:53:44.276"/>
+</kw>
+<status status="PASS" starttime="20211213 23:53:39.932" endtime="20211213 23:53:44.277"/>
+</test>
+<test id="s1-s1-t8" name="8 Sort Hi-Lo">
+<kw name="Setup Browser" library="resource" type="SETUP">
+<kw name="Open Browser" library="SeleniumLibrary">
+<arg>${URL}</arg>
+<arg>${BROWSER}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20211213 23:53:44.281" level="INFO">Opening browser 'Chrome' to base url 'https://www.saucedemo.com/'.</msg>
+<status status="PASS" starttime="20211213 23:53:44.281" endtime="20211213 23:53:46.040"/>
+</kw>
+<kw name="Maximize Browser Window" library="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" starttime="20211213 23:53:46.040" endtime="20211213 23:53:46.163"/>
+</kw>
+<kw name="Title Should Be" library="SeleniumLibrary">
+<arg>Swag Labs</arg>
+<doc>Verifies that the current page title equals ``title``.</doc>
+<msg timestamp="20211213 23:53:46.169" level="INFO">Page title is 'Swag Labs'.</msg>
+<status status="PASS" starttime="20211213 23:53:46.163" endtime="20211213 23:53:46.169"/>
+</kw>
+<kw name="Login Page Open" library="resource">
+<kw name="Page Should Contain Button" library="SeleniumLibrary">
+<arg>login-button</arg>
+<doc>Verifies button ``locator`` is found from current page.</doc>
+<msg timestamp="20211213 23:53:46.186" level="INFO">Current page contains input 'login-button'.</msg>
+<status status="PASS" starttime="20211213 23:53:46.170" endtime="20211213 23:53:46.187"/>
+</kw>
+<status status="PASS" starttime="20211213 23:53:46.169" endtime="20211213 23:53:46.187"/>
+</kw>
+<status status="PASS" starttime="20211213 23:53:44.280" endtime="20211213 23:53:46.187"/>
+</kw>
+<kw name="Input User" library="resource">
+<arg>${STANDARD}</arg>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>user-name</arg>
+<arg>${username}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20211213 23:53:46.188" level="INFO">Typing text 'standard_user' into text field 'user-name'.</msg>
+<status status="PASS" starttime="20211213 23:53:46.187" endtime="20211213 23:53:46.268"/>
+</kw>
+<status status="PASS" starttime="20211213 23:53:46.187" endtime="20211213 23:53:46.268"/>
+</kw>
+<kw name="Input Pass" library="resource">
+<arg>${VALID PASS}</arg>
+<kw name="Input Password" library="SeleniumLibrary">
+<arg>password</arg>
+<arg>${password}</arg>
+<doc>Types the given password into the text field identified by ``locator``.</doc>
+<msg timestamp="20211213 23:53:46.268" level="INFO">Typing password into text field 'password'.</msg>
+<msg timestamp="20211213 23:53:46.295" level="INFO">Temporally setting log level to: NONE</msg>
+<msg timestamp="20211213 23:53:46.329" level="INFO">Log level changed from NONE to INFO.</msg>
+<status status="PASS" starttime="20211213 23:53:46.268" endtime="20211213 23:53:46.330"/>
+</kw>
+<status status="PASS" starttime="20211213 23:53:46.268" endtime="20211213 23:53:46.330"/>
+</kw>
+<kw name="Click Button" library="SeleniumLibrary">
+<arg>login-button</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<msg timestamp="20211213 23:53:46.330" level="INFO">Clicking button 'login-button'.</msg>
+<status status="PASS" starttime="20211213 23:53:46.330" endtime="20211213 23:53:46.384"/>
+</kw>
+<kw name="Product Page Open" library="resource">
+<kw name="Page Should Contain" library="SeleniumLibrary">
+<arg>Products</arg>
+<doc>Verifies that current page contains ``text``.</doc>
+<msg timestamp="20211213 23:53:46.394" level="INFO">Current page contains text 'Products'.</msg>
+<status status="PASS" starttime="20211213 23:53:46.385" endtime="20211213 23:53:46.394"/>
+</kw>
+<status status="PASS" starttime="20211213 23:53:46.385" endtime="20211213 23:53:46.394"/>
+</kw>
+<kw name="Select From List By Label" library="SeleniumLibrary">
+<arg>${SORT}</arg>
+<arg>Price (high to low)</arg>
+<doc>Selects options from selection list ``locator`` by ``labels``.</doc>
+<msg timestamp="20211213 23:53:46.394" level="INFO">Selecting options from selection list 'class=product_sort_container' by label Price (high to low).</msg>
+<status status="PASS" starttime="20211213 23:53:46.394" endtime="20211213 23:53:46.443"/>
+</kw>
+<kw name="Check Items" library="resource">
+<arg>${PROD5}</arg>
+<arg>${PROD2}</arg>
+<kw name="Get Child Webelements" library="resource">
+<var>${children}</var>
+<arg>class=inventory_list</arg>
+<kw name="Get WebElement" library="SeleniumLibrary">
+<var>${element}</var>
+<arg>${locator}</arg>
+<doc>Returns the first WebElement matching the given ``locator``.</doc>
+<msg timestamp="20211213 23:53:46.450" level="INFO">${element} = &lt;selenium.webdriver.remote.webelement.WebElement (session="bba9837716eb1d807d8716bf86fd078c", element="8bb3492a-d2c2-44c7-8211-6e893409eb4b")&gt;</msg>
+<status status="PASS" starttime="20211213 23:53:46.444" endtime="20211213 23:53:46.450"/>
+</kw>
+<kw name="Call Method" library="BuiltIn">
+<var>${children}</var>
+<arg>${element}</arg>
+<arg>find_elements</arg>
+<arg>by=xpath</arg>
+<arg>value=child::*</arg>
+<doc>Calls the named method of the given object with the provided arguments.</doc>
+<msg timestamp="20211213 23:53:46.458" level="INFO">${children} = [&lt;selenium.webdriver.remote.webelement.WebElement (session="bba9837716eb1d807d8716bf86fd078c", element="31a9ffe3-cdd7-47f7-b2df-b78aeaccec9d")&gt;, &lt;selenium.webdriver.remote.webelement.WebElement (sessi...</msg>
+<status status="PASS" starttime="20211213 23:53:46.450" endtime="20211213 23:53:46.458"/>
+</kw>
+<msg timestamp="20211213 23:53:46.458" level="INFO">${children} = [&lt;selenium.webdriver.remote.webelement.WebElement (session="bba9837716eb1d807d8716bf86fd078c", element="31a9ffe3-cdd7-47f7-b2df-b78aeaccec9d")&gt;, &lt;selenium.webdriver.remote.webelement.WebElement (sessi...</msg>
+<status status="PASS" starttime="20211213 23:53:46.443" endtime="20211213 23:53:46.458"/>
+</kw>
+<kw name="Get Child Webelements" library="resource">
+<var>${child}</var>
+<arg>${children[0]}</arg>
+<kw name="Get WebElement" library="SeleniumLibrary">
+<var>${element}</var>
+<arg>${locator}</arg>
+<doc>Returns the first WebElement matching the given ``locator``.</doc>
+<msg timestamp="20211213 23:53:46.459" level="INFO">${element} = &lt;selenium.webdriver.remote.webelement.WebElement (session="bba9837716eb1d807d8716bf86fd078c", element="31a9ffe3-cdd7-47f7-b2df-b78aeaccec9d")&gt;</msg>
+<status status="PASS" starttime="20211213 23:53:46.459" endtime="20211213 23:53:46.459"/>
+</kw>
+<kw name="Call Method" library="BuiltIn">
+<var>${children}</var>
+<arg>${element}</arg>
+<arg>find_elements</arg>
+<arg>by=xpath</arg>
+<arg>value=child::*</arg>
+<doc>Calls the named method of the given object with the provided arguments.</doc>
+<msg timestamp="20211213 23:53:46.466" level="INFO">${children} = [&lt;selenium.webdriver.remote.webelement.WebElement (session="bba9837716eb1d807d8716bf86fd078c", element="d35c68b0-3cd2-43dd-a0f6-730a38655c0e")&gt;, &lt;selenium.webdriver.remote.webelement.WebElement (sessi...</msg>
+<status status="PASS" starttime="20211213 23:53:46.459" endtime="20211213 23:53:46.466"/>
+</kw>
+<msg timestamp="20211213 23:53:46.466" level="INFO">${child} = [&lt;selenium.webdriver.remote.webelement.WebElement (session="bba9837716eb1d807d8716bf86fd078c", element="d35c68b0-3cd2-43dd-a0f6-730a38655c0e")&gt;, &lt;selenium.webdriver.remote.webelement.WebElement (sessi...</msg>
+<status status="PASS" starttime="20211213 23:53:46.458" endtime="20211213 23:53:46.467"/>
+</kw>
+<kw name="Element Should Contain" library="SeleniumLibrary">
+<arg>${child}</arg>
+<arg>${first}</arg>
+<doc>Verifies that element ``locator`` contains text ``expected``.</doc>
+<msg timestamp="20211213 23:53:46.477" level="INFO">Element '[&lt;selenium.webdriver.remote.webelement.WebElement (session="bba9837716eb1d807d8716bf86fd078c", element="d35c68b0-3cd2-43dd-a0f6-730a38655c0e")&gt;, &lt;selenium.webdriver.remote.webelement.WebElement (session="bba9837716eb1d807d8716bf86fd078c", element="c6d3378e-c552-4c06-a35f-b0df6953230d")&gt;]' contains text 'Sauce Labs Fleece Jacket'.</msg>
+<status status="PASS" starttime="20211213 23:53:46.467" endtime="20211213 23:53:46.477"/>
+</kw>
+<kw name="Get Child Webelements" library="resource">
+<var>${children}</var>
+<arg>class=inventory_list</arg>
+<kw name="Get WebElement" library="SeleniumLibrary">
+<var>${element}</var>
+<arg>${locator}</arg>
+<doc>Returns the first WebElement matching the given ``locator``.</doc>
+<msg timestamp="20211213 23:53:46.483" level="INFO">${element} = &lt;selenium.webdriver.remote.webelement.WebElement (session="bba9837716eb1d807d8716bf86fd078c", element="8bb3492a-d2c2-44c7-8211-6e893409eb4b")&gt;</msg>
+<status status="PASS" starttime="20211213 23:53:46.477" endtime="20211213 23:53:46.483"/>
+</kw>
+<kw name="Call Method" library="BuiltIn">
+<var>${children}</var>
+<arg>${element}</arg>
+<arg>find_elements</arg>
+<arg>by=xpath</arg>
+<arg>value=child::*</arg>
+<doc>Calls the named method of the given object with the provided arguments.</doc>
+<msg timestamp="20211213 23:53:46.488" level="INFO">${children} = [&lt;selenium.webdriver.remote.webelement.WebElement (session="bba9837716eb1d807d8716bf86fd078c", element="31a9ffe3-cdd7-47f7-b2df-b78aeaccec9d")&gt;, &lt;selenium.webdriver.remote.webelement.WebElement (sessi...</msg>
+<status status="PASS" starttime="20211213 23:53:46.483" endtime="20211213 23:53:46.488"/>
+</kw>
+<msg timestamp="20211213 23:53:46.488" level="INFO">${children} = [&lt;selenium.webdriver.remote.webelement.WebElement (session="bba9837716eb1d807d8716bf86fd078c", element="31a9ffe3-cdd7-47f7-b2df-b78aeaccec9d")&gt;, &lt;selenium.webdriver.remote.webelement.WebElement (sessi...</msg>
+<status status="PASS" starttime="20211213 23:53:46.477" endtime="20211213 23:53:46.488"/>
+</kw>
+<kw name="Get Child Webelements" library="resource">
+<var>${child}</var>
+<arg>${children[5]}</arg>
+<kw name="Get WebElement" library="SeleniumLibrary">
+<var>${element}</var>
+<arg>${locator}</arg>
+<doc>Returns the first WebElement matching the given ``locator``.</doc>
+<msg timestamp="20211213 23:53:46.489" level="INFO">${element} = &lt;selenium.webdriver.remote.webelement.WebElement (session="bba9837716eb1d807d8716bf86fd078c", element="3f3a2a56-88ce-40d7-8939-8a268a106d83")&gt;</msg>
+<status status="PASS" starttime="20211213 23:53:46.489" endtime="20211213 23:53:46.489"/>
+</kw>
+<kw name="Call Method" library="BuiltIn">
+<var>${children}</var>
+<arg>${element}</arg>
+<arg>find_elements</arg>
+<arg>by=xpath</arg>
+<arg>value=child::*</arg>
+<doc>Calls the named method of the given object with the provided arguments.</doc>
+<msg timestamp="20211213 23:53:46.496" level="INFO">${children} = [&lt;selenium.webdriver.remote.webelement.WebElement (session="bba9837716eb1d807d8716bf86fd078c", element="361bf936-db17-4b1b-ba26-35db99d7982e")&gt;, &lt;selenium.webdriver.remote.webelement.WebElement (sessi...</msg>
+<status status="PASS" starttime="20211213 23:53:46.489" endtime="20211213 23:53:46.496"/>
+</kw>
+<msg timestamp="20211213 23:53:46.496" level="INFO">${child} = [&lt;selenium.webdriver.remote.webelement.WebElement (session="bba9837716eb1d807d8716bf86fd078c", element="361bf936-db17-4b1b-ba26-35db99d7982e")&gt;, &lt;selenium.webdriver.remote.webelement.WebElement (sessi...</msg>
+<status status="PASS" starttime="20211213 23:53:46.488" endtime="20211213 23:53:46.496"/>
+</kw>
+<kw name="Element Should Contain" library="SeleniumLibrary">
+<arg>${child}</arg>
+<arg>${last}</arg>
+<doc>Verifies that element ``locator`` contains text ``expected``.</doc>
+<msg timestamp="20211213 23:53:46.508" level="INFO">Element '[&lt;selenium.webdriver.remote.webelement.WebElement (session="bba9837716eb1d807d8716bf86fd078c", element="361bf936-db17-4b1b-ba26-35db99d7982e")&gt;, &lt;selenium.webdriver.remote.webelement.WebElement (session="bba9837716eb1d807d8716bf86fd078c", element="75e45e45-2079-4e7d-a53f-fbd40c6e7015")&gt;]' contains text 'Sauce Labs Onesie'.</msg>
+<status status="PASS" starttime="20211213 23:53:46.497" endtime="20211213 23:53:46.508"/>
+</kw>
+<status status="PASS" starttime="20211213 23:53:46.443" endtime="20211213 23:53:46.509"/>
+</kw>
+<kw name="Close Browser" library="SeleniumLibrary" type="TEARDOWN">
+<doc>Closes the current browser.</doc>
+<status status="PASS" starttime="20211213 23:53:46.509" endtime="20211213 23:53:48.632"/>
+</kw>
+<status status="PASS" starttime="20211213 23:53:44.279" endtime="20211213 23:53:48.634"/>
 </test>
 <doc>A test suite for Exercise: SeleniumIDE &amp; RobotFramework Practice.
 
 These are test cases listed in the instructions.</doc>
-<status status="PASS" starttime="20211213 23:48:44.277" endtime="20211213 23:49:10.091"/>
+<status status="PASS" starttime="20211213 23:53:14.697" endtime="20211213 23:53:48.638"/>
 </suite>
-<status status="PASS" starttime="20211213 23:48:44.256" endtime="20211213 23:49:10.096"/>
+<status status="PASS" starttime="20211213 23:53:14.679" endtime="20211213 23:53:48.644"/>
 </suite>
 <statistics>
 <total>
-<stat pass="6" fail="0" skip="0">All Tests</stat>
+<stat pass="8" fail="0" skip="0">All Tests</stat>
 </total>
 <tag>
 </tag>
 <suite>
-<stat pass="6" fail="0" skip="0" id="s1" name="Tests">Tests</stat>
-<stat pass="6" fail="0" skip="0" id="s1-s1" name="Test Cases">Tests.Test Cases</stat>
+<stat pass="8" fail="0" skip="0" id="s1" name="Tests">Tests</stat>
+<stat pass="8" fail="0" skip="0" id="s1-s1" name="Test Cases">Tests.Test Cases</stat>
 </suite>
 </statistics>
 <errors>
-<msg timestamp="20211213 23:49:06.020" level="WARN">Multiple test cases with name '5 Sort A-Z' executed in test suite 'Tests.Test Cases'.</msg>
 </errors>
 </robot>

@@ -51,11 +51,29 @@ Resource          resource.robot
     Check Items  ${PROD4}  ${PROD3}
     [Teardown]    Close Browser
 
-5 Sort Z-A
+6 Sort Z-A
     Input User    ${STANDARD}
     Input Pass    ${VALID PASS}
     Click Button    login-button
     Product Page Open
     Select From List By Label    ${SORT}    Name (Z to A)    
     Check Items  ${PROD3}  ${PROD4}
+    [Teardown]    Close Browser
+
+7 Sort Lo-Hi
+    Input User    ${STANDARD}
+    Input Pass    ${VALID PASS}
+    Click Button    login-button
+    Product Page Open
+    Select From List By Label    ${SORT}    Price (low to high) 
+    Check Items  ${PROD2}  ${PROD5}
+    [Teardown]    Close Browser
+
+8 Sort Hi-Lo
+    Input User    ${STANDARD}
+    Input Pass    ${VALID PASS}
+    Click Button    login-button
+    Product Page Open
+    Select From List By Label    ${SORT}    Price (high to low)    
+    Check Items  ${PROD5}  ${PROD2}
     [Teardown]    Close Browser

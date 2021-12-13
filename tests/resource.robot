@@ -14,10 +14,14 @@ ${PERFROMANCE}    performance_glitch_user
 ${VALID PASS}     secret_sauce
 ${BACK BTN}       back-to-products
 ${SORT}           class=product_sort_container
+${ITEM5}          item_5_title_link
 ${ITEM4}          item_4_title_link
 ${ITEM3}          item_3_title_link
+${ITEM2}          item_2_title_link
+${PROD5}          Sauce Labs Fleece Jacket
 ${PROD4}          Sauce Labs Backpack
 ${PROD3}          Test.allTheThings() T-Shirt (Red)
+${PROD2}          Sauce Labs Onesie
 
 *** Keywords ***
 Setup Browser
